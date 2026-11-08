@@ -1,0 +1,941 @@
+{
+  "version": "rapidocr-crops-v1",
+  "images": [
+    {
+      "note_id": "6a965705000000002b000cb5",
+      "date": "2026-09-01",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a965705000000002b000cb5/d7979431b61c8188.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/d7979431b61c8188a16f1745a8330681eafc04aea99b491000dd90fa1106cb51.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6a965705000000002b000cb5",
+      "date": "2026-09-01",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a965705000000002b000cb5/774d13c8f1ca4210.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/774d13c8f1ca4210b4b71380a9036e11e75575079774e081b5b3ba9b619d5423.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a965705000000002b000cb5",
+      "date": "2026-09-01",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a965705000000002b000cb5/16d77a0bfef34f88.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/16d77a0bfef34f885e67d9b765bd3075144e6a6602cc9cc096e374cb08707356.json",
+      "line_count": 20
+    },
+    {
+      "note_id": "6a97acdb000000000b00cd1b",
+      "date": "2026-09-02",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a97acdb000000000b00cd1b/90a2220bafd7cb4a.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/90a2220bafd7cb4a7675625bfeba37cb4ff4fae66bd46f5e12503bb25b16434b.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6a97acdb000000000b00cd1b",
+      "date": "2026-09-02",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a97acdb000000000b00cd1b/ac50e8dc5c4daae3.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ac50e8dc5c4daae31e939e73dfd1e285bae12ed4fb05bdd33b459d83c55d9912.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6a97acdb000000000b00cd1b",
+      "date": "2026-09-02",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a97acdb000000000b00cd1b/6923967bf9b75493.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/6923967bf9b75493c18cc31682cf6ed63cc907c4c5bb61b2e544d87ce166fe23.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a98f8cb000000002b026c26",
+      "date": "2026-09-03",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a98f8cb000000002b026c26/fe08e92084ee8036.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/fe08e92084ee8036f3913096268ccdf404215e15497884a89a56e81bf09628ad.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6a98f8cb000000002b026c26",
+      "date": "2026-09-03",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a98f8cb000000002b026c26/aa0a89e3762c9b72.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/aa0a89e3762c9b72e86fa27e00875540c52669fbdea6355e6c55fddf4ff04034.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6a98f8cb000000002b026c26",
+      "date": "2026-09-03",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a98f8cb000000002b026c26/65089de83cd2aa6d.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/65089de83cd2aa6d7c31ae5b1322bdebd07414f9d401f960c643a185459fa035.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a9a526400000000270166cc",
+      "date": "2026-09-04",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a9a526400000000270166cc/0141aa5b8d0f2739.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/0141aa5b8d0f27390ffb4b2697644cef2d9012ce0548e7601e24612fd0bb3a1e.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a9a526400000000270166cc",
+      "date": "2026-09-04",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a9a526400000000270166cc/4553ae458d0255c8.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/4553ae458d0255c86c8a5b7e4cd66eb24e59114f721f19656625b9fa5ff4fba5.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6a9a526400000000270166cc",
+      "date": "2026-09-04",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a9a526400000000270166cc/3ff58e85dbae330f.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/3ff58e85dbae330fec9bd86ae6858aeb9c44d9289e0c6bd7e5793569191f59e7.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6a9e3f31000000000b034dd6",
+      "date": "2026-09-07",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/6a9eb18b72917db6.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6a9e3f31000000000b034dd6",
+      "date": "2026-09-07",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/63675c4bc399eb0d.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/63675c4bc399eb0d3196ce94130d56a82a471a68456e239d34e0b5a049544967.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a9e3f31000000000b034dd6",
+      "date": "2026-09-07",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/15c36c6bd99a78b5.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/15c36c6bd99a78b51bc73ecc1ee4b5ee3afcb18f17095f6c6281ad53e736a2b6.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6a9f94d1000000002901abb7",
+      "date": "2026-09-08",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6a9f94d1000000002901abb7/570c8a4b552923eb.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/570c8a4b552923eb5ac54b5765f934ea1097a14781345b101800b78c60c16ee9.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6a9f94d1000000002901abb7",
+      "date": "2026-09-08",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6a9f94d1000000002901abb7/2bf5998117b3cdb7.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/2bf5998117b3cdb76a8c9db4d043110306ea02effad1bf9e37bbbd0ebf412908.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6a9f94d1000000002901abb7",
+      "date": "2026-09-08",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6a9f94d1000000002901abb7/9df8e05374cb1112.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9df8e05374cb1112deaf50ce56f55d5f46701443fcb6e2b8d0bfcdb16c2b311b.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6aa0e6be0000000027015c1e",
+      "date": "2026-09-09",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aa0e6be0000000027015c1e/9c5d598ad4d660fe.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9c5d598ad4d660fefcb422899219c1159da105050e95e6952adcd67a4196d371.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6aa0e6be0000000027015c1e",
+      "date": "2026-09-09",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aa0e6be0000000027015c1e/8d68bf42f1a7b737.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/8d68bf42f1a7b73731ec1c4284c0a9f169bd3c5746fba7f247ab969a0f36aff3.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6aa0e6be0000000027015c1e",
+      "date": "2026-09-09",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aa0e6be0000000027015c1e/86cf8584703bc3d5.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/86cf8584703bc3d554f80aec7e0e11d106cdfebfd8bb9b1ebfc87367e381686d.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aa235f90000000028033e35",
+      "date": "2026-09-10",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aa235f90000000028033e35/cfc8abae3408278c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/cfc8abae3408278c916f817dfba2c5c829e05d29ee4b236b7f55579557a8e946.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6aa235f90000000028033e35",
+      "date": "2026-09-10",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aa235f90000000028033e35/9f69c5d7adf8b532.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9f69c5d7adf8b532de82b2198ccb87c22cf389cf51a93bec8c42982ca6c08b5f.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6aa235f90000000028033e35",
+      "date": "2026-09-10",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aa235f90000000028033e35/97b6577f083c05fd.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/97b6577f083c05fd6b5fb10d1efbde8f291a5315eb41d8f6314b5cfa8c16d0e5.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aa38ecc0000000026030f01",
+      "date": "2026-09-11",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aa38ecc0000000026030f01/ad8c7dc326c107d3.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ad8c7dc326c107d3e8678371709d9e8ad466b90629230bfc50bdb09cfea38762.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6aa38ecc0000000026030f01",
+      "date": "2026-09-11",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aa38ecc0000000026030f01/f9d30fa98107f509.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/f9d30fa98107f509604c18e578f21960768daf02433173ed8ba03dfde01841ce.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aa38ecc0000000026030f01",
+      "date": "2026-09-11",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aa38ecc0000000026030f01/cdbba0d7e216da0d.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/cdbba0d7e216da0dd4bbabdad5656e080592323e41694050af6f8c9c7a053844.json",
+      "line_count": 20
+    },
+    {
+      "note_id": "6aa77dc8000000000b0013cd",
+      "date": "2026-09-14",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aa77dc8000000000b0013cd/1165c596b7d23d86.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/1165c596b7d23d86d8214a17d3738f02cb645efb8030e142de996d2eaf82e43f.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6aa77dc8000000000b0013cd",
+      "date": "2026-09-14",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aa77dc8000000000b0013cd/e2673cef99a7ed6c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/e2673cef99a7ed6ccedd08f17037d3ad6541cc44ca746bd5c41160425bb56e0f.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6aa77dc8000000000b0013cd",
+      "date": "2026-09-14",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aa77dc8000000000b0013cd/4271c6236a08ff2c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/4271c6236a08ff2c56f555e6bcf18fceedea665e22b5f133607564347786f854.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aa8cd60000000002a026e0d",
+      "date": "2026-09-15",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aa8cd60000000002a026e0d/059381445e2f817f.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/059381445e2f817f04271b02c3780bc46a1aa74c37bc5f9511767d16669a8c16.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6aa8cd60000000002a026e0d",
+      "date": "2026-09-15",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aa8cd60000000002a026e0d/c1a5969da4fc9c8b.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/c1a5969da4fc9c8b30458f5cc3115fcb31f483be031cbe79328e6b9926397816.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aa8cd60000000002a026e0d",
+      "date": "2026-09-15",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aa8cd60000000002a026e0d/21d2c2e74df4dea0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/21d2c2e74df4dea0e54b7a0d9784e7f1f42bd4f16a863e0d8392f2bc02270277.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6aaa345c000000002a02ff89",
+      "date": "2026-09-16",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aaa345c000000002a02ff89/964f8af648c9f53c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/964f8af648c9f53ce91951f253725d70ea8cdd6ba42ccc08201c950a68f02dca.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6aaa345c000000002a02ff89",
+      "date": "2026-09-16",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aaa345c000000002a02ff89/3cef4a6b5102b75a.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/3cef4a6b5102b75a8c524794dec3fea344ff489da24ce3813cbd925d9e8c11db.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aaa345c000000002a02ff89",
+      "date": "2026-09-16",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aaa345c000000002a02ff89/aef311cf5625ffaa.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/aef311cf5625ffaaf1a54c0f4b9533a20ce102b7761dbf10e209ae604bb33a74.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6aab736d0000000026008ffb",
+      "date": "2026-09-17",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aab736d0000000026008ffb/623b0cce92c0f24c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/623b0cce92c0f24c940cd042e037e60c3fd44b09446e0cd42f5e63e85b6b9193.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6aab736d0000000026008ffb",
+      "date": "2026-09-17",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aab736d0000000026008ffb/a8df0d350ed899e1.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/a8df0d350ed899e1e9e13ee4cfa5f16449764bf4a0eb2cf2ec0b13d5cc504d58.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6aab736d0000000026008ffb",
+      "date": "2026-09-17",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aab736d0000000026008ffb/3337c2c9b9e99c74.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/3337c2c9b9e99c7449dc8e8be38934c1047548b67e1a636008bdaabe8ebd1fff.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aacccd2000000002603ae6e",
+      "date": "2026-09-18",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/83a47235fe07f853.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6aacccd2000000002603ae6e",
+      "date": "2026-09-18",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/94f07c0d737ef297.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/94f07c0d737ef2971d85ec723464f4bc5458f70379d869edbb75fb18efef7f03.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aacccd2000000002603ae6e",
+      "date": "2026-09-18",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/16d53403576d1192.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/16d53403576d1192c1ab4137eed4bf83e60db48bbe69b20660210b45b6adb9a6.json",
+      "line_count": 17
+    },
+    {
+      "note_id": "6ab0bcb30000000038001a11",
+      "date": "2026-09-21",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/a68e699e21e0326e.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6ab0bcb30000000038001a11",
+      "date": "2026-09-21",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/9f2efc067773b567.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9f2efc067773b567e117819052b047d11f7f127ef3dc675b6624eef8207aca97.json",
+      "line_count": 20
+    },
+    {
+      "note_id": "6ab0bcb30000000038001a11",
+      "date": "2026-09-21",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/9730293c9063159e.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9730293c9063159eb0872fd0104b2a7678be80bbe1c0d98e91db11b96ad7299a.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ab2040c000000003a022967",
+      "date": "2026-09-22",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/2c207dd8dd8f7037.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455.json",
+      "line_count": 25
+    },
+    {
+      "note_id": "6ab2040c000000003a022967",
+      "date": "2026-09-22",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/814724897dfeda6c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/814724897dfeda6cce7b5c0ec319e8c6dccedea993ba2c427465fad1cf0eebaa.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6ab2040c000000003a022967",
+      "date": "2026-09-22",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/0dba0ba013358805.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/0dba0ba0133588058f673cb9cd612ac351984901ff06fa6a9c3e187c2f06aa7a.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ab359830000000014030989",
+      "date": "2026-09-23",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/ba41ce216d599a9e.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6ab359830000000014030989",
+      "date": "2026-09-23",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/f70acf1208ab1772.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/f70acf1208ab1772359ba3996781671cce87adcc71c1b5b39cb14a906ac09b30.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6ab359830000000014030989",
+      "date": "2026-09-23",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/bf44d719fd27c955.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/bf44d719fd27c955e8301feb35b23c9f58630cce4609e284531e2c7f522c38a9.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ab4b1c40000000015004e3a",
+      "date": "2026-09-24",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ab4b1c40000000015004e3a/5e793a91f31b1328.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/5e793a91f31b1328af558a0f3bbeb025f5f8c5dc74b469760a7d0fbfa5df9352.json",
+      "line_count": 19
+    },
+    {
+      "note_id": "6ab4b1c40000000015004e3a",
+      "date": "2026-09-24",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ab4b1c40000000015004e3a/ed278100c365010d.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ed278100c365010d03898c77086adf3d568bdbf9cfb07a7e054e1490a58e6b23.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ab4b1c40000000015004e3a",
+      "date": "2026-09-24",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ab4b1c40000000015004e3a/fa40e2934e50729a.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/fa40e2934e50729a718f7ba13f3be6c8c3a1001c99eecb4c2e3a670568b220e7.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ab9f4e10000000001009dda",
+      "date": "2026-09-28",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/6172a24b98085ea6.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/6172a24b98085ea66f69655f53b7b918256f6ffb7d7ad27caecd014499f9e316.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6ab9f4e10000000001009dda",
+      "date": "2026-09-28",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/c770fc4f55051d59.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ab9f4e10000000001009dda",
+      "date": "2026-09-28",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/62e65d0b029c50b9.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/62e65d0b029c50b9a6540e9d96c4f524ee19a19360180e66f1ef95e7a8b672a8.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6abb5809000000001402ee0d",
+      "date": "2026-09-29",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/48ae39321cda7534.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/48ae39321cda7534e054a534146ffd58fc48fe1b04f06f6f80ac24f37cf8db87.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6abb5809000000001402ee0d",
+      "date": "2026-09-29",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e1b778847ede76b1.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6abb5809000000001402ee0d",
+      "date": "2026-09-29",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/cb59e8d97761e61b.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/cb59e8d97761e61bd0b88d1a7b1d167bd3cdb4dbc176bd4eac0d6d3793995bec.json",
+      "line_count": 18
+    },
+    {
+      "note_id": "6abc981f000000001b01e11d",
+      "date": "2026-09-30",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6abc981f000000001b01e11d/0299197b69911389.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/0299197b69911389b58baeeab581054cc77e8e86d1db7c3b38f2c77e24a841e3.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6abc981f000000001b01e11d",
+      "date": "2026-09-30",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6abc981f000000001b01e11d/da6f6fd0048c52eb.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/da6f6fd0048c52eb55d0053610de16a87534613dbd55316abdd4a697a15ddc21.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6abc981f000000001b01e11d",
+      "date": "2026-09-30",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6abc981f000000001b01e11d/80cd584fc1853248.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/80cd584fc18532486670b80c50ab5497d722fb694ae2461e8beb78bbcc4a57de.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6ac71edd0000000018017fcc",
+      "date": "2026-10-08",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ac71edd0000000018017fcc/d8a3952ea2bbc4c3.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/d8a3952ea2bbc4c38cd2729e48b9f422771e6f64de9f58b53f9ee6e2eb1a8435.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ac71edd0000000018017fcc",
+      "date": "2026-10-08",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ac71edd0000000018017fcc/ac8c275d4fdf55f4.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ac8c275d4fdf55f4340843bfd52b128068dc1a3fdc2f996f4b32e11da6ca33ee.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ac71edd0000000018017fcc",
+      "date": "2026-10-08",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ac71edd0000000018017fcc/2278b14957b5e50c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/2278b14957b5e50ca48e8b69cddd6642159f0eb8423b9e4deb05e9c7134e49c0.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ac879560000000018019c2f",
+      "date": "2026-10-09",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ac879560000000018019c2f/672e220a2e50e90e.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/672e220a2e50e90e0220b58c0e81c4bbe95bafc2f8f5195728dafce26c60aa02.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ac879560000000018019c2f",
+      "date": "2026-10-09",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ac879560000000018019c2f/d2c977167283e970.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/d2c977167283e970a6d69a0906d75e12ecc66d31bf20f9ef66e7b9f3599cdf04.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ac879560000000018019c2f",
+      "date": "2026-10-09",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ac879560000000018019c2f/db257e7b194c58fa.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/db257e7b194c58faaed41259a7b34b660489a1c19bd9ffb68a40db712f0033a5.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6acc655d000000001a025d10",
+      "date": "2026-10-12",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6acc655d000000001a025d10/48184ffafe6212bf.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/48184ffafe6212bff0b2d10d25f781416dcf72ff549f85ff9973af9b09f53c2f.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6acc655d000000001a025d10",
+      "date": "2026-10-12",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6acc655d000000001a025d10/34caa57842a995e0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/34caa57842a995e0573c8c76ed31f41066b863b77bc704bd01024046c665e771.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6acc655d000000001a025d10",
+      "date": "2026-10-12",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6acc655d000000001a025d10/c6c54ced37b0083c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/c6c54ced37b0083c61ceea218c76499e7f5bd28495bcad7e85163c0a45e0a133.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6acdb6980000000002012f64",
+      "date": "2026-10-13",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6acdb6980000000002012f64/1cc16d1a5672c87d.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/1cc16d1a5672c87d3c6aeee83966861cb46baa1b85e900fbeb208d477c650846.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6acdb6980000000002012f64",
+      "date": "2026-10-13",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6acdb6980000000002012f64/90980020ee147b68.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/90980020ee147b68a0f3d839e8633fd4c14136d6fe656384b874319784842b15.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6acdb6980000000002012f64",
+      "date": "2026-10-13",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6acdb6980000000002012f64/4044b9be18698ffe.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/4044b9be18698ffe567f560de4c1efd21d8b049c3bdcf0753776d1093b4492c5.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6acf1137000000001a0328af",
+      "date": "2026-10-14",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6acf1137000000001a0328af/23b58f8d8b6a8dc8.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/23b58f8d8b6a8dc861fd85b8505c39a73cccb28f60ef7f05388ee47376d6a14c.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6acf1137000000001a0328af",
+      "date": "2026-10-14",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6acf1137000000001a0328af/9f7a42de6fbd01be.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9f7a42de6fbd01bed9555bc5980ab13ca9ffab18505bc0ed4aa4cdddf2a58540.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6acf1137000000001a0328af",
+      "date": "2026-10-14",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6acf1137000000001a0328af/138378b3dd9e1a03.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/138378b3dd9e1a037662a6e9ef669a7e23c37d62cd8a3b67798ccccebfac153a.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ad0586f000000001c01cb10",
+      "date": "2026-10-15",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ad0586f000000001c01cb10/5ea5635a39c900b4.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/5ea5635a39c900b4d42b682acbd2cb2f944c3431ee3ea61d14f43a4ca30366ef.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ad0586f000000001c01cb10",
+      "date": "2026-10-15",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ad0586f000000001c01cb10/d92aa7bc6743f478.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/d92aa7bc6743f478a5aae0a03c50958df8f21a7bd0b607fdf21f5d3dabded2a8.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6ad0586f000000001c01cb10",
+      "date": "2026-10-15",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ad0586f000000001c01cb10/c533fa4d7563b0d0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/c533fa4d7563b0d018ea58a37e62aaadbbf3962104907bb49bb71e729e41eaab.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ad1abea000000001b01d2c3",
+      "date": "2026-10-16",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ad1abea000000001b01d2c3/df59849916cb3a09.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/df59849916cb3a094531f47ed2a81925cd01a685cd07213ef2664225a298c6bd.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ad1abea000000001b01d2c3",
+      "date": "2026-10-16",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ad1abea000000001b01d2c3/73cbf0219ae05217.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/73cbf0219ae0521785c60a8eb9861ed8facea85f6044ecce15264e09f8dba760.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ad1abea000000001b01d2c3",
+      "date": "2026-10-16",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ad1abea000000001b01d2c3/1a4773d2215ce028.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/1a4773d2215ce028750f393ee282ed52367a49590ba6117ef468d6e130078fcc.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6ad5a8d40000000026014cc0",
+      "date": "2026-10-19",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ad5a8d40000000026014cc0/9eb32cf1fde8096c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9eb32cf1fde8096c055b4e2431c7a430c661cc44ea5403c72b4d291c3b477ad8.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ad5a8d40000000026014cc0",
+      "date": "2026-10-19",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ad5a8d40000000026014cc0/22249450bad825ff.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/22249450bad825ff2c6fd794b58f6620b3aab94af324e75e23ec0b68d171c7df.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ad5a8d40000000026014cc0",
+      "date": "2026-10-19",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ad5a8d40000000026014cc0/1b4aafff15e130bb.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/1b4aafff15e130bb0129b724637f1bc8aad23dd6734dada5d24de759a976bd13.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6adeda5c0000000002008e05",
+      "date": "2026-10-26",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6adeda5c0000000002008e05/56a150d14d74f2a1.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/56a150d14d74f2a1cb4d3f6f3da9021ebbd6c239ebdd160092a866d03127d1aa.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6adeda5c0000000002008e05",
+      "date": "2026-10-26",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6adeda5c0000000002008e05/5ba8545b6f0a8054.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/5ba8545b6f0a805456f11a29dc6a5999672e1d166a150227b5799da3fc40a926.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6adeda5c0000000002008e05",
+      "date": "2026-10-26",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6adeda5c0000000002008e05/f8870446ce340bd1.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/f8870446ce340bd1d6dbd1ab2439484553e91fddf59340cc41d36ce818d23cc2.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae02c26000000000e02d271",
+      "date": "2026-10-27",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae02c26000000000e02d271/d0241076e3b6038f.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/d0241076e3b6038f05abf65d95a8452f7804ccf9cae8250f5d0489da862f1099.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae02c26000000000e02d271",
+      "date": "2026-10-27",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae02c26000000000e02d271/131b6f98c6a53d9c.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/131b6f98c6a53d9c0bdae2028b07d32b48370c076cd036a1f2969934cd285d9e.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ae02c26000000000e02d271",
+      "date": "2026-10-27",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae02c26000000000e02d271/7f523d816dcbf88a.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/7f523d816dcbf88ab39c6a1a1c68e486543a9bee935baac51defe613872657fa.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae188820000000036011e51",
+      "date": "2026-10-28",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae188820000000036011e51/0b6b999936eaf08b.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/0b6b999936eaf08b74ff2d4af322c09235c35703e4d707d8bb0bccaef06ffb25.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae188820000000036011e51",
+      "date": "2026-10-28",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae188820000000036011e51/078552689b7878b0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/078552689b7878b03e6b871a1d71512cfd801a3bd834c08fd2c8f88dee24546a.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6ae188820000000036011e51",
+      "date": "2026-10-28",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae188820000000036011e51/aaf20d3de333caf1.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/aaf20d3de333caf1723803469ac5b20cde64b6abac4eb0dea2665e9b683f6b46.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae2d1b40000000033011c1f",
+      "date": "2026-10-29",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/1211e7b9ccdb7476.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/1211e7b9ccdb7476a52cb83202d48faeefdc63b6af699653d1e1ceb4968989d2.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae2d1b40000000033011c1f",
+      "date": "2026-10-29",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/875895601800b68f.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6ae2d1b40000000033011c1f",
+      "date": "2026-10-29",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/b0e85b760ebbfb48.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/b0e85b760ebbfb482db57980af09ea1bab721a0f46abe6abccd0c26a6c632661.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae4218e0000000019002879",
+      "date": "2026-10-30",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae4218e0000000019002879/5ddf10ea474aed2a.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/5ddf10ea474aed2ab1798270658a92e968d5dcdfdd301f6a4487365847b61b51.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae4218e0000000019002879",
+      "date": "2026-10-30",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae4218e0000000019002879/2c8ff181726ff16f.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/2c8ff181726ff16f41b064b9e3f4b9dc907f3f274e769e30e2ed90edaba0961b.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6ae4218e0000000019002879",
+      "date": "2026-10-30",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae4218e0000000019002879/ae3d51cb7d55a4e0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/ae3d51cb7d55a4e0ff7515b4a737693e808f9f1ee77645fe7ae1ff2e433f366d.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae8167d000000001001375f",
+      "date": "2026-11-02",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae8167d000000001001375f/cbdbe293b2c1f8b2.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/cbdbe293b2c1f8b2c93314e2f8803f1f295f2925d332c6da2c33acf494d85b8f.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae8167d000000001001375f",
+      "date": "2026-11-02",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae8167d000000001001375f/a81c890bced815c2.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/a81c890bced815c2e88561fa9f39a37b0f382133756263f39aa68aa7e822d299.json",
+      "line_count": 23
+    },
+    {
+      "note_id": "6ae8167d000000001001375f",
+      "date": "2026-11-02",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae8167d000000001001375f/a9ec903c102bb811.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/a9ec903c102bb811f9c7f68f1910dfbfd2f636b52ec0de758ba8100c5992a666.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6ae96d210000000010011cb4",
+      "date": "2026-11-03",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6ae96d210000000010011cb4/e5464fef48a9c078.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/e5464fef48a9c07812dede9f9b8b9e63e9c671d35e3a691f182bc6033e6ac5bb.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6ae96d210000000010011cb4",
+      "date": "2026-11-03",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae96d210000000010011cb4/9b9ca3d38bc4c37e.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/9b9ca3d38bc4c37ea40f35ebc3777b6ad7d3abafa538e09dc2e25f20fd4038e6.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6ae96d210000000010011cb4",
+      "date": "2026-11-03",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6ae96d210000000010011cb4/7e2c64907f16bece.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/7e2c64907f16bececb76f8b75f289aac75ea3157448f49be87e7036ed8b65c50.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6aeab9890000000016030b75",
+      "date": "2026-11-04",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aeab9890000000016030b75/2b7083718f46bb15.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/2b7083718f46bb15a427f54b7822e95d85aa68cb73ed9e4ed672760d59542f0d.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6aeab9890000000016030b75",
+      "date": "2026-11-04",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aeab9890000000016030b75/96cf6418b2c4f2ba.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/96cf6418b2c4f2baed81195e8a54cf66b32507b2b0525ea61271d756d2c33e96.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aeab9890000000016030b75",
+      "date": "2026-11-04",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aeab9890000000016030b75/79577bfbf4228e14.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/79577bfbf4228e143a007f7dec40f20a9f4311e9d91d3a86a3bca79659f02d39.json",
+      "line_count": 24
+    },
+    {
+      "note_id": "6aec0a85000000000f026f69",
+      "date": "2026-11-05",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aec0a85000000000f026f69/fa2892907db7bce0.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/fa2892907db7bce00108a53c98dc50be4f33fd77d069c9455f055f071a271517.json",
+      "line_count": 26
+    },
+    {
+      "note_id": "6aec0a85000000000f026f69",
+      "date": "2026-11-05",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aec0a85000000000f026f69/17e1f483f2e304f3.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/17e1f483f2e304f3503be24beae3dccaa245acc99f3b9b675409d6b2a9cc9c6b.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6aec0a85000000000f026f69",
+      "date": "2026-11-05",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aec0a85000000000f026f69/c6dc0001e2d14bae.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/c6dc0001e2d14bae96840e0df506a4dce96a641933227c5840268bef51bd4068.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aed5df300000000090021da",
+      "date": "2026-11-06",
+      "page_kind": "overview",
+      "image_file": "data/raw/fuli_time_archive/6aed5df300000000090021da/07e3ecca84873895.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/07e3ecca84873895dc9ba336f09f23b8f3a8d1fcc7bcc9e76dd7e3b6c18c28f9.json",
+      "line_count": 3
+    },
+    {
+      "note_id": "6aed5df300000000090021da",
+      "date": "2026-11-06",
+      "page_kind": "position",
+      "image_file": "data/raw/fuli_time_archive/6aed5df300000000090021da/83cbf86721d9fbe4.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/83cbf86721d9fbe4d6fac149c017238055e7c281529716812926c030be7c3a31.json",
+      "line_count": 10
+    },
+    {
+      "note_id": "6aed5df300000000090021da",
+      "date": "2026-11-06",
+      "page_kind": "score",
+      "image_file": "data/raw/fuli_time_archive/6aed5df300000000090021da/af452b6c0ddbf906.webp",
+      "ocr_details_file": "research/fuli_time/archive/ocr_details/af452b6c0ddbf906a99b8b7c1df4764be2d5fdf978f98c59dd118f8e6431ef22.json",
+      "line_count": 24
+    }
+  ]
+}

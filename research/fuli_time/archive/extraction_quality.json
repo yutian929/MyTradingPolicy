@@ -1,0 +1,2162 @@
+{
+  "summary": {
+    "observation_count": 2862,
+    "note_count_with_metrics": 39,
+    "instruments": {
+      "红利低波": 2862
+    },
+    "missing_or_ambiguous_count": 0,
+    "source_not_reported_count": 1,
+    "histogram_count": 39,
+    "histograms_sum_verified": 39,
+    "anomaly_counts": {
+      "body_attachment_claim_not_observed": 1,
+      "grade_differs_from_printed_common_thresholds": 24
+    }
+  },
+  "anomalies": [
+    {
+      "type": "body_attachment_claim_not_observed",
+      "date": "2026-09-30",
+      "note": "正文称附南方50/低波100；浏览器确认原帖共7图，当前可见七图均为红利低波。不据正文伪造附图或数据。",
+      "status": "browser_and_image_observation"
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6a9e3f31000000000b034dd6",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "B",
+      "values": [
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/6a9eb18b72917db6.webp",
+          "sha256": "6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f",
+          "ocr_file": "research/fuli_time/archive/ocr/6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 57.3,
+          "unit": "score",
+          "raw_text": "57.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9990179985761642,
+          "box": [
+            [
+              70.0,
+              322.0
+            ],
+            [
+              205.0,
+              324.0
+            ],
+            [
+              203.0,
+              388.0
+            ],
+            [
+              69.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/a6d9dd86458a4972.webp",
+          "sha256": "a6d9dd86458a497255eea1ec62e53f72a80bd11a03cd8f8371ad7627d59ce147",
+          "ocr_file": "research/fuli_time/archive/ocr/a6d9dd86458a497255eea1ec62e53f72a80bd11a03cd8f8371ad7627d59ce147.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "C",
+          "unit": "grade",
+          "raw_text": "C·综合评分57",
+          "line_id": 6,
+          "ocr_pass": "full_page",
+          "confidence": 0.967148594558239,
+          "box": [
+            [
+              114.0,
+              280.0
+            ],
+            [
+              246.0,
+              282.0
+            ],
+            [
+              246.0,
+              303.0
+            ],
+            [
+              113.0,
+              301.0
+            ]
+          ],
+          "extraction_method": "contextual_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6a9e3f31000000000b034dd6",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "B",
+      "values": [
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/6a9eb18b72917db6.webp",
+          "sha256": "6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f",
+          "ocr_file": "research/fuli_time/archive/ocr/6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 57.3,
+          "unit": "score",
+          "raw_text": "57.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9990179985761642,
+          "box": [
+            [
+              70.0,
+              322.0
+            ],
+            [
+              205.0,
+              324.0
+            ],
+            [
+              203.0,
+              388.0
+            ],
+            [
+              69.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/6a9eb18b72917db6.webp",
+          "sha256": "6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f",
+          "ocr_file": "research/fuli_time/archive/ocr/6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "C",
+          "unit": "grade",
+          "raw_text": "C",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.8712173700332642,
+          "box": [
+            [
+              128.0,
+              402.0
+            ],
+            [
+              145.0,
+              402.0
+            ],
+            [
+              145.0,
+              418.0
+            ],
+            [
+              128.0,
+              418.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6a9e3f31000000000b034dd6",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "B",
+      "values": [
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/6a9eb18b72917db6.webp",
+          "sha256": "6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f",
+          "ocr_file": "research/fuli_time/archive/ocr/6a9eb18b72917db6cc6db46384a5dbe2360aefab418075edc722224ea7f22c3f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 57.3,
+          "unit": "score",
+          "raw_text": "57.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9990179985761642,
+          "box": [
+            [
+              70.0,
+              322.0
+            ],
+            [
+              205.0,
+              324.0
+            ],
+            [
+              203.0,
+              388.0
+            ],
+            [
+              69.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6a9e3f31000000000b034dd6",
+          "date": "2026-09-07",
+          "title": "2026.9.7红利低波，不到A，不考虑进",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6a9e3f31000000000b034dd6/15c36c6bd99a78b5.webp",
+          "sha256": "15c36c6bd99a78b51bc73ecc1ee4b5ee3afcb18f17095f6c6281ad53e736a2b6",
+          "ocr_file": "research/fuli_time/archive/ocr/15c36c6bd99a78b51bc73ecc1ee4b5ee3afcb18f17095f6c6281ad53e736a2b6.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6a9e3f31000000000b034dd6",
+          "chart_date": "2026-09-07",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "C",
+          "unit": "grade",
+          "raw_text": "C",
+          "line_id": "price_score:9",
+          "ocr_pass": "enlarged_region",
+          "confidence": 0.9724735021591187,
+          "box": [
+            [
+              636.0972493489584,
+              429.25694274902344
+            ],
+            [
+              645.1063232421875,
+              429.25694274902344
+            ],
+            [
+              645.1063232421875,
+              439.875
+            ],
+            [
+              636.0972493489584,
+              439.875
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6aacccd2000000002603ae6e",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/83a47235fe07f853.webp",
+          "sha256": "83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1",
+          "ocr_file": "research/fuli_time/archive/ocr/83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 72.3,
+          "unit": "score",
+          "raw_text": "72.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9995569139719009,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/2cb71f6e7cdfe755.webp",
+          "sha256": "2cb71f6e7cdfe7554a1cd5ff09d3bb6a783874ae8ec750380a7088636f3e4f6e",
+          "ocr_file": "research/fuli_time/archive/ocr/2cb71f6e7cdfe7554a1cd5ff09d3bb6a783874ae8ec750380a7088636f3e4f6e.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B·综合评分72",
+          "line_id": 6,
+          "ocr_pass": "full_page",
+          "confidence": 0.980562761425972,
+          "box": [
+            [
+              113.0,
+              281.0
+            ],
+            [
+              248.0,
+              283.0
+            ],
+            [
+              248.0,
+              304.0
+            ],
+            [
+              113.0,
+              302.0
+            ]
+          ],
+          "extraction_method": "contextual_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6aacccd2000000002603ae6e",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/83a47235fe07f853.webp",
+          "sha256": "83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1",
+          "ocr_file": "research/fuli_time/archive/ocr/83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 72.3,
+          "unit": "score",
+          "raw_text": "72.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9995569139719009,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/83a47235fe07f853.webp",
+          "sha256": "83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1",
+          "ocr_file": "research/fuli_time/archive/ocr/83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9960993528366089,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6aacccd2000000002603ae6e",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/83a47235fe07f853.webp",
+          "sha256": "83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1",
+          "ocr_file": "research/fuli_time/archive/ocr/83a47235fe07f8535fb75e9a06d6d0b244dcea5b54c57fc51ca6b933016b63e1.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 72.3,
+          "unit": "score",
+          "raw_text": "72.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9995569139719009,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6aacccd2000000002603ae6e",
+          "date": "2026-09-18",
+          "title": "2026.9.18红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6aacccd2000000002603ae6e/16d53403576d1192.webp",
+          "sha256": "16d53403576d1192c1ab4137eed4bf83e60db48bbe69b20660210b45b6adb9a6",
+          "ocr_file": "research/fuli_time/archive/ocr/16d53403576d1192c1ab4137eed4bf83e60db48bbe69b20660210b45b6adb9a6.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6aacccd2000000002603ae6e",
+          "chart_date": "2026-09-18",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": "price_score:9",
+          "ocr_pass": "enlarged_region",
+          "confidence": 0.9976521134376526,
+          "box": [
+            [
+              636.0972493489584,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              440.6388905843099
+            ],
+            [
+              636.0972493489584,
+              440.6388905843099
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab0bcb30000000038001a11",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/a68e699e21e0326e.webp",
+          "sha256": "a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f",
+          "ocr_file": "research/fuli_time/archive/ocr/a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.8,
+          "unit": "score",
+          "raw_text": "74.8",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998052716255188,
+          "box": [
+            [
+              73.0,
+              324.0
+            ],
+            [
+              207.0,
+              326.0
+            ],
+            [
+              206.0,
+              388.0
+            ],
+            [
+              71.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/4e66154d537d0346.webp",
+          "sha256": "4e66154d537d03467c93eefb81d38c9e09887d59c5e0b40b2cd7f7aa1cc97353",
+          "ocr_file": "research/fuli_time/archive/ocr/4e66154d537d03467c93eefb81d38c9e09887d59c5e0b40b2cd7f7aa1cc97353.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 15,
+          "ocr_pass": "full_page",
+          "confidence": 0.9964900612831116,
+          "box": [
+            [
+              856.0,
+              588.0
+            ],
+            [
+              868.0,
+              588.0
+            ],
+            [
+              868.0,
+              600.0
+            ],
+            [
+              856.0,
+              600.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab0bcb30000000038001a11",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/a68e699e21e0326e.webp",
+          "sha256": "a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f",
+          "ocr_file": "research/fuli_time/archive/ocr/a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.8,
+          "unit": "score",
+          "raw_text": "74.8",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998052716255188,
+          "box": [
+            [
+              73.0,
+              324.0
+            ],
+            [
+              207.0,
+              326.0
+            ],
+            [
+              206.0,
+              388.0
+            ],
+            [
+              71.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/a68e699e21e0326e.webp",
+          "sha256": "a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f",
+          "ocr_file": "research/fuli_time/archive/ocr/a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9962764382362366,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab0bcb30000000038001a11",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/a68e699e21e0326e.webp",
+          "sha256": "a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f",
+          "ocr_file": "research/fuli_time/archive/ocr/a68e699e21e0326e575f15ba3ef357901d7721642641932cc5ae2d9eadb28b4f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.8,
+          "unit": "score",
+          "raw_text": "74.8",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998052716255188,
+          "box": [
+            [
+              73.0,
+              324.0
+            ],
+            [
+              207.0,
+              326.0
+            ],
+            [
+              206.0,
+              388.0
+            ],
+            [
+              71.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab0bcb30000000038001a11",
+          "date": "2026-09-21",
+          "title": "2026.9.21红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6ab0bcb30000000038001a11/9f2efc067773b567.webp",
+          "sha256": "9f2efc067773b567e117819052b047d11f7f127ef3dc675b6624eef8207aca97",
+          "ocr_file": "research/fuli_time/archive/ocr/9f2efc067773b567e117819052b047d11f7f127ef3dc675b6624eef8207aca97.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab0bcb30000000038001a11",
+          "chart_date": "2026-09-21",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 19,
+          "ocr_pass": "full_page",
+          "confidence": 0.9973016977310181,
+          "box": [
+            [
+              636.0,
+              428.0
+            ],
+            [
+              647.0,
+              428.0
+            ],
+            [
+              647.0,
+              441.0
+            ],
+            [
+              636.0,
+              441.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab2040c000000003a022967",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/2c207dd8dd8f7037.webp",
+          "sha256": "2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455",
+          "ocr_file": "research/fuli_time/archive/ocr/2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 71.5,
+          "unit": "score",
+          "raw_text": "71.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993751347064972,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              205.0,
+              325.0
+            ],
+            [
+              205.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/ba8819557b745063.webp",
+          "sha256": "ba8819557b74506397a1117ffede5a7a1f43e75b499c2edf0a783b84ed4e0810",
+          "ocr_file": "research/fuli_time/archive/ocr/ba8819557b74506397a1117ffede5a7a1f43e75b499c2edf0a783b84ed4e0810.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B·综合评分72",
+          "line_id": 6,
+          "ocr_pass": "full_page",
+          "confidence": 0.9789769127964973,
+          "box": [
+            [
+              114.0,
+              280.0
+            ],
+            [
+              247.0,
+              282.0
+            ],
+            [
+              247.0,
+              303.0
+            ],
+            [
+              113.0,
+              301.0
+            ]
+          ],
+          "extraction_method": "contextual_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab2040c000000003a022967",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/2c207dd8dd8f7037.webp",
+          "sha256": "2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455",
+          "ocr_file": "research/fuli_time/archive/ocr/2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 71.5,
+          "unit": "score",
+          "raw_text": "71.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993751347064972,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              205.0,
+              325.0
+            ],
+            [
+              205.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/2c207dd8dd8f7037.webp",
+          "sha256": "2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455",
+          "ocr_file": "research/fuli_time/archive/ocr/2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9962245225906372,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab2040c000000003a022967",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/2c207dd8dd8f7037.webp",
+          "sha256": "2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455",
+          "ocr_file": "research/fuli_time/archive/ocr/2c207dd8dd8f7037339c74f783bf42793d95b77ed7c2023ec536c168b4211455.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 71.5,
+          "unit": "score",
+          "raw_text": "71.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993751347064972,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              205.0,
+              325.0
+            ],
+            [
+              205.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab2040c000000003a022967",
+          "date": "2026-09-22",
+          "title": "2026.9.22红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6ab2040c000000003a022967/814724897dfeda6c.webp",
+          "sha256": "814724897dfeda6cce7b5c0ec319e8c6dccedea993ba2c427465fad1cf0eebaa",
+          "ocr_file": "research/fuli_time/archive/ocr/814724897dfeda6cce7b5c0ec319e8c6dccedea993ba2c427465fad1cf0eebaa.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab2040c000000003a022967",
+          "chart_date": "2026-09-22",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 19,
+          "ocr_pass": "full_page",
+          "confidence": 0.9981507658958435,
+          "box": [
+            [
+              636.0,
+              429.0
+            ],
+            [
+              647.0,
+              429.0
+            ],
+            [
+              647.0,
+              441.0
+            ],
+            [
+              636.0,
+              441.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab359830000000014030989",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/ba41ce216d599a9e.webp",
+          "sha256": "ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004",
+          "ocr_file": "research/fuli_time/archive/ocr/ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.5,
+          "unit": "score",
+          "raw_text": "75.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994259774684906,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              206.0,
+              323.0
+            ],
+            [
+              206.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/6edbcc61883df194.webp",
+          "sha256": "6edbcc61883df1942ba063f277323fe5082155eb12bad09ade4a53ab259c541f",
+          "ocr_file": "research/fuli_time/archive/ocr/6edbcc61883df1942ba063f277323fe5082155eb12bad09ade4a53ab259c541f.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 15,
+          "ocr_pass": "full_page",
+          "confidence": 0.9953924417495728,
+          "box": [
+            [
+              857.0,
+              589.0
+            ],
+            [
+              869.0,
+              589.0
+            ],
+            [
+              869.0,
+              601.0
+            ],
+            [
+              857.0,
+              601.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab359830000000014030989",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/ba41ce216d599a9e.webp",
+          "sha256": "ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004",
+          "ocr_file": "research/fuli_time/archive/ocr/ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.5,
+          "unit": "score",
+          "raw_text": "75.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994259774684906,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              206.0,
+              323.0
+            ],
+            [
+              206.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/ba41ce216d599a9e.webp",
+          "sha256": "ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004",
+          "ocr_file": "research/fuli_time/archive/ocr/ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9959546327590942,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab359830000000014030989",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/ba41ce216d599a9e.webp",
+          "sha256": "ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004",
+          "ocr_file": "research/fuli_time/archive/ocr/ba41ce216d599a9ec96ed514cf8f16cc228723303a5e1a0bf0570ed58c9d7004.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.5,
+          "unit": "score",
+          "raw_text": "75.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994259774684906,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              206.0,
+              323.0
+            ],
+            [
+              206.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab359830000000014030989",
+          "date": "2026-09-23",
+          "title": "2026.9.23红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6ab359830000000014030989/f70acf1208ab1772.webp",
+          "sha256": "f70acf1208ab1772359ba3996781671cce87adcc71c1b5b39cb14a906ac09b30",
+          "ocr_file": "research/fuli_time/archive/ocr/f70acf1208ab1772359ba3996781671cce87adcc71c1b5b39cb14a906ac09b30.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab359830000000014030989",
+          "chart_date": "2026-09-23",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": "price_score:11",
+          "ocr_pass": "enlarged_region",
+          "confidence": 0.9974774718284607,
+          "box": [
+            [
+              636.0972493489584,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              440.6388905843099
+            ],
+            [
+              636.0972493489584,
+              440.6388905843099
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab9f4e10000000001009dda",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/c770fc4f55051d59.webp",
+          "sha256": "c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06",
+          "ocr_file": "research/fuli_time/archive/ocr/c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.3,
+          "unit": "score",
+          "raw_text": "74.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993649870157242,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/b15ccba08a98b677.webp",
+          "sha256": "b15ccba08a98b677717eeba9753f0684f6e90e6e92a70110195624c5fc9049fa",
+          "ocr_file": "research/fuli_time/archive/ocr/b15ccba08a98b677717eeba9753f0684f6e90e6e92a70110195624c5fc9049fa.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B·综合评分74",
+          "line_id": 6,
+          "ocr_pass": "full_page",
+          "confidence": 0.9800291508436203,
+          "box": [
+            [
+              114.0,
+              280.0
+            ],
+            [
+              247.0,
+              282.0
+            ],
+            [
+              247.0,
+              303.0
+            ],
+            [
+              113.0,
+              301.0
+            ]
+          ],
+          "extraction_method": "contextual_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab9f4e10000000001009dda",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/c770fc4f55051d59.webp",
+          "sha256": "c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06",
+          "ocr_file": "research/fuli_time/archive/ocr/c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.3,
+          "unit": "score",
+          "raw_text": "74.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993649870157242,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/6172a24b98085ea6.webp",
+          "sha256": "6172a24b98085ea66f69655f53b7b918256f6ffb7d7ad27caecd014499f9e316",
+          "ocr_file": "research/fuli_time/archive/ocr/6172a24b98085ea66f69655f53b7b918256f6ffb7d7ad27caecd014499f9e316.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": "price_score:9",
+          "ocr_pass": "enlarged_region",
+          "confidence": 0.9964500665664673,
+          "box": [
+            [
+              636.0972493489584,
+              429.25694274902344
+            ],
+            [
+              645.1063232421875,
+              429.25694274902344
+            ],
+            [
+              645.1063232421875,
+              439.39235432942706
+            ],
+            [
+              636.0972493489584,
+              439.39235432942706
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ab9f4e10000000001009dda",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/c770fc4f55051d59.webp",
+          "sha256": "c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06",
+          "ocr_file": "research/fuli_time/archive/ocr/c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 74.3,
+          "unit": "score",
+          "raw_text": "74.3",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9993649870157242,
+          "box": [
+            [
+              73.0,
+              325.0
+            ],
+            [
+              204.0,
+              325.0
+            ],
+            [
+              204.0,
+              386.0
+            ],
+            [
+              73.0,
+              386.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ab9f4e10000000001009dda",
+          "date": "2026-09-28",
+          "title": "2026.9.28红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ab9f4e10000000001009dda/c770fc4f55051d59.webp",
+          "sha256": "c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06",
+          "ocr_file": "research/fuli_time/archive/ocr/c770fc4f55051d591f40d866ac5618b702eed388b56b800916740a0eb806ef06.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ab9f4e10000000001009dda",
+          "chart_date": "2026-09-28",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.996329128742218,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6abb5809000000001402ee0d",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e1b778847ede76b1.webp",
+          "sha256": "e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139",
+          "ocr_file": "research/fuli_time/archive/ocr/e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.2,
+          "unit": "score",
+          "raw_text": "75.2",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994913041591644,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              208.0,
+              323.0
+            ],
+            [
+              208.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e0d272960b061596.webp",
+          "sha256": "e0d272960b061596271a0f275931e612f6f281ea101235d101ad85aa5f350b9b",
+          "ocr_file": "research/fuli_time/archive/ocr/e0d272960b061596271a0f275931e612f6f281ea101235d101ad85aa5f350b9b.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 15,
+          "ocr_pass": "full_page",
+          "confidence": 0.9955130219459534,
+          "box": [
+            [
+              857.0,
+              589.0
+            ],
+            [
+              869.0,
+              589.0
+            ],
+            [
+              869.0,
+              600.0
+            ],
+            [
+              857.0,
+              600.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6abb5809000000001402ee0d",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e1b778847ede76b1.webp",
+          "sha256": "e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139",
+          "ocr_file": "research/fuli_time/archive/ocr/e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.2,
+          "unit": "score",
+          "raw_text": "75.2",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994913041591644,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              208.0,
+              323.0
+            ],
+            [
+              208.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e1b778847ede76b1.webp",
+          "sha256": "e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139",
+          "ocr_file": "research/fuli_time/archive/ocr/e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9960824251174927,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6abb5809000000001402ee0d",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "A",
+      "values": [
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/e1b778847ede76b1.webp",
+          "sha256": "e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139",
+          "ocr_file": "research/fuli_time/archive/ocr/e1b778847ede76b1574787a4e098a047d7b5859673747fc8b32b034102c72139.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 75.2,
+          "unit": "score",
+          "raw_text": "75.2",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9994913041591644,
+          "box": [
+            [
+              72.0,
+              323.0
+            ],
+            [
+              208.0,
+              323.0
+            ],
+            [
+              208.0,
+              387.0
+            ],
+            [
+              72.0,
+              387.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6abb5809000000001402ee0d",
+          "date": "2026-09-29",
+          "title": "2026.9.29红利低波，今天有事更新晚了",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6abb5809000000001402ee0d/cb59e8d97761e61b.webp",
+          "sha256": "cb59e8d97761e61bd0b88d1a7b1d167bd3cdb4dbc176bd4eac0d6d3793995bec",
+          "ocr_file": "research/fuli_time/archive/ocr/cb59e8d97761e61bd0b88d1a7b1d167bd3cdb4dbc176bd4eac0d6d3793995bec.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6abb5809000000001402ee0d",
+          "chart_date": "2026-09-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "B",
+          "unit": "grade",
+          "raw_text": "B",
+          "line_id": "price_score:10",
+          "ocr_pass": "enlarged_region",
+          "confidence": 0.9969080090522766,
+          "box": [
+            [
+              636.0972493489584,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              430.43055725097656
+            ],
+            [
+              644.6058349609375,
+              440.6388905843099
+            ],
+            [
+              636.0972493489584,
+              440.6388905843099
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ae2d1b40000000033011c1f",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "E",
+      "values": [
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/875895601800b68f.webp",
+          "sha256": "875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d",
+          "ocr_file": "research/fuli_time/archive/ocr/875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 21.5,
+          "unit": "score",
+          "raw_text": "21.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998214095830917,
+          "box": [
+            [
+              67.0,
+              324.0
+            ],
+            [
+              204.0,
+              324.0
+            ],
+            [
+              204.0,
+              385.0
+            ],
+            [
+              67.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "cover",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/52a0c034af313e77.webp",
+          "sha256": "52a0c034af313e7773d8233e834c58447942bf4ac1059e019943f2539fa9d084",
+          "ocr_file": "research/fuli_time/archive/ocr/52a0c034af313e7773d8233e834c58447942bf4ac1059e019943f2539fa9d084.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "今日红利低波",
+          "metric": "score_grade",
+          "value": "D",
+          "unit": "grade",
+          "raw_text": "D",
+          "line_id": 13,
+          "ocr_pass": "full_page",
+          "confidence": 0.991805911064148,
+          "box": [
+            [
+              884.0,
+              569.0
+            ],
+            [
+              901.0,
+              569.0
+            ],
+            [
+              901.0,
+              586.0
+            ],
+            [
+              884.0,
+              586.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ae2d1b40000000033011c1f",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "E",
+      "values": [
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/875895601800b68f.webp",
+          "sha256": "875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d",
+          "ocr_file": "research/fuli_time/archive/ocr/875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 21.5,
+          "unit": "score",
+          "raw_text": "21.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998214095830917,
+          "box": [
+            [
+              67.0,
+              324.0
+            ],
+            [
+              204.0,
+              324.0
+            ],
+            [
+              204.0,
+              385.0
+            ],
+            [
+              67.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/875895601800b68f.webp",
+          "sha256": "875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d",
+          "ocr_file": "research/fuli_time/archive/ocr/875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_grade",
+          "value": "D",
+          "unit": "grade",
+          "raw_text": "D",
+          "line_id": 16,
+          "ocr_pass": "full_page",
+          "confidence": 0.9862440228462219,
+          "box": [
+            [
+              126.0,
+              401.0
+            ],
+            [
+              146.0,
+              401.0
+            ],
+            [
+              146.0,
+              419.0
+            ],
+            [
+              126.0,
+              419.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    },
+    {
+      "type": "grade_differs_from_printed_common_thresholds",
+      "note_id": "6ae2d1b40000000033011c1f",
+      "instrument_name": "红利低波",
+      "expected_by_thresholds": "E",
+      "values": [
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "score",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/875895601800b68f.webp",
+          "sha256": "875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d",
+          "ocr_file": "research/fuli_time/archive/ocr/875895601800b68f634f5967f5ff404d2cf35532723809fa5be911b9449c112d.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "红利低波",
+          "metric": "score_precise",
+          "value": 21.5,
+          "unit": "score",
+          "raw_text": "21.5",
+          "line_id": 12,
+          "ocr_pass": "full_page",
+          "confidence": 0.9998214095830917,
+          "box": [
+            [
+              67.0,
+              324.0
+            ],
+            [
+              204.0,
+              324.0
+            ],
+            [
+              204.0,
+              385.0
+            ],
+            [
+              67.0,
+              385.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        },
+        {
+          "note_id": "6ae2d1b40000000033011c1f",
+          "date": "2026-10-29",
+          "title": "2026.10.29红利低波，指标更新",
+          "page_kind": "overview",
+          "image_file": "data/raw/fuli_time_archive/6ae2d1b40000000033011c1f/b0e85b760ebbfb48.webp",
+          "sha256": "b0e85b760ebbfb482db57980af09ea1bab721a0f46abe6abccd0c26a6c632661",
+          "ocr_file": "research/fuli_time/archive/ocr/b0e85b760ebbfb482db57980af09ea1bab721a0f46abe6abccd0c26a6c632661.json",
+          "source_url": "https://www.xiaohongshu.com/explore/6ae2d1b40000000033011c1f",
+          "chart_date": "2026-10-29",
+          "instrument_name": "红利低波",
+          "instrument_evidence": "本图全部针对红利低波",
+          "metric": "score_grade",
+          "value": "D",
+          "unit": "grade",
+          "raw_text": "D",
+          "line_id": 18,
+          "ocr_pass": "full_page",
+          "confidence": 0.992085874080658,
+          "box": [
+            [
+              635.0,
+              430.0
+            ],
+            [
+              647.0,
+              430.0
+            ],
+            [
+              647.0,
+              442.0
+            ],
+            [
+              635.0,
+              442.0
+            ]
+          ],
+          "extraction_method": "layout_and_literal",
+          "status": "machine_ocr_unverified"
+        }
+      ],
+      "note": "Flag only; source grade retained. Check this page’s visible threshold legend before correction."
+    }
+  ],
+  "missing_or_ambiguous": []
+}

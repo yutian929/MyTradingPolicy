@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-trading-policy"
+version = "0.1.0"
+description = "Personal market analysis and visualization with AkShare"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "akshare",
+    "pandas",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab", "nbclient", "ipykernel", "plotly>=5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,25 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local secrets and editor files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+
+# Generated data and reports
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/outputs/*
+!/outputs/.gitkeep

@@ -1,0 +1,156 @@
+{
+  "overrides": [
+    {
+      "date": "2026-10-12",
+      "note_id": "6acc655d000000001a025d10",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": 1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6acc655d000000001a025d10/48184ffafe6212bf.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-13",
+      "note_id": "6acdb6980000000002012f64",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6acdb6980000000002012f64/1cc16d1a5672c87d.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-14",
+      "note_id": "6acf1137000000001a0328af",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": 1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6acf1137000000001a0328af/9f7a42de6fbd01be.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-15",
+      "note_id": "6ad0586f000000001c01cb10",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6ad0586f000000001c01cb10/5ea5635a39c900b4.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-16",
+      "note_id": "6ad1abea000000001b01d2c3",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": 1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6ad1abea000000001b01d2c3/73cbf0219ae05217.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-28",
+      "note_id": "6ae188820000000036011e51",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6ae188820000000036011e51/0b6b999936eaf08b.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-28",
+      "note_id": "6ae188820000000036011e51",
+      "page_kind": "score",
+      "metric": "score_precise",
+      "value": 42.7,
+      "unit": "score",
+      "image_file": "data/raw/fuli_time_archive/6ae188820000000036011e51/078552689b7878b0.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-11-02",
+      "note_id": "6ae8167d000000001001375f",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -1,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6ae8167d000000001001375f/cbdbe293b2c1f8b2.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-11-03",
+      "note_id": "6ae96d210000000010011cb4",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -2,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6ae96d210000000010011cb4/e5464fef48a9c078.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-11-04",
+      "note_id": "6aeab9890000000016030b75",
+      "page_kind": "overview",
+      "metric": "position_52w_pct",
+      "value": 99,
+      "unit": "%",
+      "image_file": "data/raw/fuli_time_archive/6aeab9890000000016030b75/2b7083718f46bb15.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-11-05",
+      "note_id": "6aec0a85000000000f026f69",
+      "page_kind": "position",
+      "metric": "streak",
+      "value": -2,
+      "unit": "days",
+      "image_file": "data/raw/fuli_time_archive/6aec0a85000000000f026f69/c6dc0001e2d14bae.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-09-02",
+      "note_id": "6a97acdb000000000b00cd1b",
+      "page_kind": "score",
+      "metric": "daily_return_pct",
+      "value": -0.5,
+      "unit": "%",
+      "image_file": "data/raw/fuli_time_archive/6a97acdb000000000b00cd1b/90a2220bafd7cb4a.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    },
+    {
+      "date": "2026-10-26",
+      "note_id": "6adeda5c0000000002008e05",
+      "page_kind": "value",
+      "metric": "spread_percentile",
+      "value": 38,
+      "unit": "percentile",
+      "image_file": "data/raw/fuli_time_archive/6adeda5c0000000002008e05/d14d87b87b8f7ba9.webp",
+      "reason": "2026-11-08人工目视原图/局部裁剪核验，保留原始OCR",
+      "status": "visually_verified"
+    }
+  ],
+  "confirmed_missing": [
+    {
+      "date": "2026-11-05",
+      "page_kind": "overview",
+      "metric": "crowding",
+      "reason": "人工目视原图明确显示破折号，不是漏识别，源数据未提供",
+      "status": "source_not_reported"
+    }
+  ]
+}

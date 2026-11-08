@@ -1,0 +1,290 @@
+[
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -10.93,
+    "closest_real_60d_return_pct": -10.934891485809683,
+    "absolute_error_pp": 0.004891485809682905,
+    "start_date": "2026-03-31",
+    "end_date": "2026-06-30",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -10.18,
+    "closest_real_60d_return_pct": -10.18062397372741,
+    "absolute_error_pp": 0.0006239737274107426,
+    "start_date": "2020-01-10",
+    "end_date": "2020-04-14",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -9.9,
+    "closest_real_60d_return_pct": -9.904761904761916,
+    "absolute_error_pp": 0.004761904761915403,
+    "start_date": "2024-06-21",
+    "end_date": "2024-09-13",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -9.36,
+    "closest_real_60d_return_pct": -9.27152317880794,
+    "absolute_error_pp": 0.08847682119206013,
+    "start_date": "2020-01-16",
+    "end_date": "2020-04-20",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -8.72,
+    "closest_real_60d_return_pct": -8.71751886001677,
+    "absolute_error_pp": 0.002481139983229852,
+    "start_date": "2026-03-30",
+    "end_date": "2026-06-29",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -6.98,
+    "closest_real_60d_return_pct": -6.96474634565778,
+    "absolute_error_pp": 0.015253654342220813,
+    "start_date": "2019-12-12",
+    "end_date": "2020-03-16",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -6.85,
+    "closest_real_60d_return_pct": -6.8480300187617305,
+    "absolute_error_pp": 0.0019699812382691917,
+    "start_date": "2024-06-12",
+    "end_date": "2024-09-04",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": -5.72,
+    "closest_real_60d_return_pct": -5.723204994797082,
+    "absolute_error_pp": 0.00320499479708225,
+    "start_date": "2023-09-20",
+    "end_date": "2023-12-21",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 11.45,
+    "closest_real_60d_return_pct": 11.457577955039877,
+    "absolute_error_pp": 0.007577955039877793,
+    "start_date": "2021-03-02",
+    "end_date": "2021-05-31",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 12.1,
+    "closest_real_60d_return_pct": 12.10106382978724,
+    "absolute_error_pp": 0.001063829787240067,
+    "start_date": "2021-11-22",
+    "end_date": "2022-02-22",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 14.96,
+    "closest_real_60d_return_pct": 14.977973568281922,
+    "absolute_error_pp": 0.01797356828192065,
+    "start_date": "2020-06-17",
+    "end_date": "2020-09-11",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 18.45,
+    "closest_real_60d_return_pct": 18.469656992084428,
+    "absolute_error_pp": 0.019656992084428282,
+    "start_date": "2020-06-09",
+    "end_date": "2020-09-03",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 21.03,
+    "closest_real_60d_return_pct": 20.994475138121537,
+    "absolute_error_pp": 0.035524861878464264,
+    "start_date": "2020-04-23",
+    "end_date": "2020-07-23",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 22.2,
+    "closest_real_60d_return_pct": 22.202486678507995,
+    "absolute_error_pp": 0.0024866785079957765,
+    "start_date": "2020-06-03",
+    "end_date": "2020-08-28",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 25.72,
+    "closest_real_60d_return_pct": 25.742574257425744,
+    "absolute_error_pp": 0.02257425742574526,
+    "start_date": "2020-05-21",
+    "end_date": "2020-08-17",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "none",
+    "published_extreme_pct": 28.02,
+    "closest_real_60d_return_pct": 28.139321723189738,
+    "absolute_error_pp": 0.11932172318973855,
+    "start_date": "2020-05-22",
+    "end_date": "2020-08-18",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -10.93,
+    "closest_real_60d_return_pct": -10.934891485809683,
+    "absolute_error_pp": 0.004891485809682905,
+    "start_date": "2026-03-31",
+    "end_date": "2026-06-30",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -10.18,
+    "closest_real_60d_return_pct": -10.18062397372741,
+    "absolute_error_pp": 0.0006239737274107426,
+    "start_date": "2020-01-10",
+    "end_date": "2020-04-14",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -9.9,
+    "closest_real_60d_return_pct": -9.904761904761916,
+    "absolute_error_pp": 0.004761904761915403,
+    "start_date": "2024-06-21",
+    "end_date": "2024-09-13",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -9.36,
+    "closest_real_60d_return_pct": -9.364161849710984,
+    "absolute_error_pp": 0.0041618497109841,
+    "start_date": "2021-09-15",
+    "end_date": "2021-12-20",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -8.72,
+    "closest_real_60d_return_pct": -8.71751886001677,
+    "absolute_error_pp": 0.002481139983229852,
+    "start_date": "2026-03-30",
+    "end_date": "2026-06-29",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -6.98,
+    "closest_real_60d_return_pct": -6.94214876033058,
+    "absolute_error_pp": 0.03785123966942017,
+    "start_date": "2019-04-12",
+    "end_date": "2019-07-11",
+    "matches_display_rounding": false
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -6.85,
+    "closest_real_60d_return_pct": -6.8480300187617305,
+    "absolute_error_pp": 0.0019699812382691917,
+    "start_date": "2024-06-12",
+    "end_date": "2024-09-04",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": -5.72,
+    "closest_real_60d_return_pct": -5.723204994797082,
+    "absolute_error_pp": 0.00320499479708225,
+    "start_date": "2023-09-20",
+    "end_date": "2023-12-21",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 11.45,
+    "closest_real_60d_return_pct": 11.449275362318856,
+    "absolute_error_pp": 0.0007246376811433919,
+    "start_date": "2021-03-02",
+    "end_date": "2021-05-31",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 12.1,
+    "closest_real_60d_return_pct": 12.10106382978724,
+    "absolute_error_pp": 0.001063829787240067,
+    "start_date": "2021-11-22",
+    "end_date": "2022-02-22",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 14.96,
+    "closest_real_60d_return_pct": 14.964788732394375,
+    "absolute_error_pp": 0.004788732394374051,
+    "start_date": "2020-06-17",
+    "end_date": "2020-09-11",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 18.45,
+    "closest_real_60d_return_pct": 18.453427065026375,
+    "absolute_error_pp": 0.0034270650263756863,
+    "start_date": "2020-06-09",
+    "end_date": "2020-09-03",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 21.03,
+    "closest_real_60d_return_pct": 21.03386809269161,
+    "absolute_error_pp": 0.0038680926916079272,
+    "start_date": "2020-06-01",
+    "end_date": "2020-08-26",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 22.2,
+    "closest_real_60d_return_pct": 22.202486678507995,
+    "absolute_error_pp": 0.0024866785079957765,
+    "start_date": "2020-06-03",
+    "end_date": "2020-08-28",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 25.72,
+    "closest_real_60d_return_pct": 25.71942446043163,
+    "absolute_error_pp": 0.000575539568369976,
+    "start_date": "2020-05-21",
+    "end_date": "2020-08-17",
+    "matches_display_rounding": true
+  },
+  {
+    "adjustment": "qfq",
+    "published_extreme_pct": 28.02,
+    "closest_real_60d_return_pct": 28.02197802197801,
+    "absolute_error_pp": 0.001978021978011668,
+    "start_date": "2020-05-22",
+    "end_date": "2020-08-18",
+    "matches_display_rounding": true
+  }
+]

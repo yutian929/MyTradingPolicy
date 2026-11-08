@@ -1,0 +1,2 @@
+# Local link to the bundled spreadsheet runtime, not project dependencies.
+node_modules

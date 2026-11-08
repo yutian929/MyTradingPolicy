@@ -1,0 +1,23 @@
+{
+  "matched_body_image_facts": 672,
+  "differences": [
+    {
+      "date": "2026-10-26",
+      "note_id": "6adeda5c0000000002008e05",
+      "metric": "spread_percentile",
+      "body_value": 37,
+      "image_values": [
+        "38.0",
+        "38"
+      ],
+      "images": [
+        "data/raw/fuli_time_archive/6adeda5c0000000002008e05/f8870446ce340bd1.webp",
+        "data/raw/fuli_time_archive/6adeda5c0000000002008e05/d14d87b87b8f7ba9.webp"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6adeda5c0000000002008e05",
+      "status": "confirmed_source_disagreement",
+      "meaning": "已目视确认正文37、图中38，两个来源分别保留"
+    }
+  ],
+  "note": "正文和图片是独立来源；匹配只提供交叉佐证，不代表所有OCR字词已人工核验。"
+}

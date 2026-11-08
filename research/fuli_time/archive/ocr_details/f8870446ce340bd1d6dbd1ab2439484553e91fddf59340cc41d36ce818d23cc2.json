@@ -1,0 +1,99 @@
+{
+  "version": "rapidocr-crops-v1",
+  "sha256": "f8870446ce340bd1d6dbd1ab2439484553e91fddf59340cc41d36ce818d23cc2",
+  "width": 1080,
+  "height": 1557,
+  "lines": [
+    {
+      "line_id": "numeric:score_rounded",
+      "region": "score_rounded",
+      "recognition_mode": "single_numeric_region",
+      "text": "52",
+      "confidence": 0.8765091300010681,
+      "box": [
+        [
+          545,
+          392
+        ],
+        [
+          630,
+          392
+        ],
+        [
+          630,
+          451
+        ],
+        [
+          545,
+          451
+        ]
+      ],
+      "x": 545,
+      "y": 392,
+      "width": 85,
+      "height": 59
+    },
+    {
+      "line_id": "numeric:crowding",
+      "region": "crowding",
+      "recognition_mode": "single_numeric_region",
+      "text": "50.5",
+      "confidence": 0.9273194074630737,
+      "box": [
+        [
+          167,
+          1159
+        ],
+        [
+          270,
+          1159
+        ],
+        [
+          270,
+          1214
+        ],
+        [
+          167,
+          1214
+        ]
+      ],
+      "x": 167,
+      "y": 1159,
+      "width": 103,
+      "height": 55
+    },
+    {
+      "line_id": "numeric:position_52w_pct",
+      "region": "position_52w_pct",
+      "recognition_mode": "single_numeric_region",
+      "text": "78%",
+      "confidence": 0.9984502196311951,
+      "box": [
+        [
+          826,
+          1159
+        ],
+        [
+          918,
+          1159
+        ],
+        [
+          918,
+          1214
+        ],
+        [
+          826,
+          1214
+        ]
+      ],
+      "x": 826,
+      "y": 1159,
+      "width": 92,
+      "height": 55
+    }
+  ],
+  "status": "machine_ocr_unverified",
+  "seconds": 0.001,
+  "numeric_complete_v2": true,
+  "numeric_complete_v3": true
+}

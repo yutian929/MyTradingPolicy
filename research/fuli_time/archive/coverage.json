@@ -1,0 +1,30 @@
+{
+  "author": "复利时光",
+  "profile_url": "https://www.xiaohongshu.com/user/profile/5b0f9469f7e8b97ec0cf73b1",
+  "requested_from": "2026-09-01",
+  "requested_to": "2026-11-08",
+  "collected_on": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "latest_visible_note": "2026-11-06",
+  "earliest_included_note": "2026-09-01",
+  "older_boundary_observed": {"date":"2026-08-31","note_id":"6a9524c0000000002a0324b0"},
+  "visible_notes_in_range": 42,
+  "daily_analysis_notes": 39,
+  "notice_notes": 3,
+  "downloaded_unique_images": 274,
+  "coverage_method": "登录后的作者主页逐段浏览；最新11月6日，连续覆盖至9月1日并看到8月31日边界；按笔记ID去重。另一次主页复查未发现新增或遗漏标题。",
+  "image_count_exceptions": [
+    {"date":"2026-10-19","count":6,"evidence":"浏览器原帖图集明确显示1/6"},
+    {"date":"2026-10-20","count":1,"evidence":"停更说明图"},
+    {"date":"2026-10-21","count":0,"evidence":"文字说明，浏览器显示10-21"},
+    {"date":"2026-09-02","note_id":"6a97b6d7000000002a0257db","count":1,"evidence":"阅读量里程碑图，浏览器显示09-02"}
+  ],
+  "scope": "作者主页当前可见笔记的正文事实、图中指标、图表标注、方法与操作提示；不包含读者评论或作者评论回复的穷尽采集。",
+  "limitations": [
+    "主页当下可见范围不代表已删除、隐藏或仅其他客户端可见内容。没有笔记的日子不填造数据。",
+    "图上曲线没有标注的逐日数值未发布为表格，不能当作已取得底层完整时序；原图保留供后续研究。",
+    "图文数值、估值日期及评级矛盾分来源保留，不用后续行情覆盖。",
+    "OCR结果保留坐标、置信度和原图；高置信度不等于人工核验。",
+    "解释性正文以事实和简洁摘要整理，不提供整篇叙述性文字的逐字转载。"
+  ]
+}

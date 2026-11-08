@@ -1,0 +1,247 @@
+{
+  "model_version": "published-score-surrogate-20261030-v1",
+  "original_algorithm_identified": false,
+  "frozen_training_end": "2026-10-30",
+  "training_dates": 34,
+  "holdout_dates": 5,
+  "features": [
+    "rsi14",
+    "bias_250_pct",
+    "kdj_j",
+    "bollinger_percent_b_pct"
+  ],
+  "observed_feature_min": [
+    45.5,
+    0.53,
+    -2.6,
+    15.0
+  ],
+  "observed_feature_max": [
+    66.9,
+    4.93,
+    117.1,
+    102.0
+  ],
+  "selection": {
+    "criterion": "lowest expanding-window score MAE on training dates only",
+    "folds": "train first 18/22/26/30 dates, validate next 4 each",
+    "features": [
+      "rsi14",
+      "bias_250_pct",
+      "kdj_j",
+      "bollinger_percent_b_pct"
+    ],
+    "transform": "logit",
+    "degree": 1,
+    "ridge": 0.01,
+    "train_cv_mae": 0.6291958768124798,
+    "train_cv_max_error": 1.6221471029789285,
+    "audit_note": "Initial two-feature baselines also received one holdout diagnostic; candidate selection did not use those holdout results."
+  },
+  "validation": [
+    {
+      "mode": "independent_akshare_1130",
+      "split": "holdout",
+      "n": 5,
+      "mae": 1.4026526929276375,
+      "max_absolute_error": 3.6349694566164956,
+      "grade_accuracy": 1.0,
+      "candidate_action_accuracy": 0.8,
+      "action_abstentions": 4,
+      "same_timing_independent_validation": true
+    },
+    {
+      "mode": "independent_akshare_1130",
+      "split": "train",
+      "n": 22,
+      "mae": 1.1138340520457843,
+      "max_absolute_error": 7.287677782989945,
+      "grade_accuracy": 0.9545454545454546,
+      "candidate_action_accuracy": 0.9545454545454546,
+      "action_abstentions": 15,
+      "same_timing_independent_validation": true
+    },
+    {
+      "mode": "independent_akshare_eod_not_midday",
+      "split": "holdout",
+      "n": 5,
+      "mae": 7.1220876211829305,
+      "max_absolute_error": 11.718238767483296,
+      "grade_accuracy": 0.2,
+      "candidate_action_accuracy": 0.8,
+      "action_abstentions": 1,
+      "same_timing_independent_validation": false
+    },
+    {
+      "mode": "independent_akshare_eod_not_midday",
+      "split": "train",
+      "n": 34,
+      "mae": 3.7876879057553348,
+      "max_absolute_error": 10.911712029910888,
+      "grade_accuracy": 0.8235294117647058,
+      "candidate_action_accuracy": 0.6470588235294118,
+      "action_abstentions": 25,
+      "same_timing_independent_validation": false
+    },
+    {
+      "mode": "published_indicator_conditioned",
+      "split": "holdout",
+      "n": 5,
+      "mae": 1.4002582774244536,
+      "max_absolute_error": 3.645080424561339,
+      "grade_accuracy": 1.0,
+      "candidate_action_accuracy": 0.8,
+      "action_abstentions": 4,
+      "same_timing_independent_validation": false
+    },
+    {
+      "mode": "published_indicator_conditioned",
+      "split": "train",
+      "n": 34,
+      "mae": 0.45088747345629293,
+      "max_absolute_error": 1.5463719374268408,
+      "grade_accuracy": 1.0,
+      "candidate_action_accuracy": 1.0,
+      "action_abstentions": 24,
+      "same_timing_independent_validation": false
+    }
+  ],
+  "grade_observation": {
+    "actual_grade_matches_20point_bins": 39,
+    "n": 39,
+    "status": "inferred_from_observed_outputs_not_recovered_code",
+    "thresholds_hypothesis": [
+      20,
+      40,
+      60,
+      80
+    ],
+    "unobserved_boundary": 80,
+    "printed_legend_thresholds": [
+      25,
+      40,
+      55,
+      70
+    ],
+    "unresolved": "Observed scores do not tightly identify exact boundaries; the 20-point hypothesis fits all samples."
+  },
+  "actions": {
+    "hypothesis_thresholds": [
+      30,
+      45,
+      55,
+      70
+    ],
+    "score80plus_action": null,
+    "n": 39,
+    "note": "Action boundaries are inferred within gaps; predicted actions are withheld when ±5 score band crosses one."
+  },
+  "conditional_returns": {
+    "implemented": true,
+    "source": "real AkShare 512890 qfq returns",
+    "original_statistics_reproduced": false,
+    "point_in_time_label_guard": "end strictly before report date",
+    "adjustment_evidence": {
+      "published_distinct_extremes": 16,
+      "qfq_matches_display_precision": 15,
+      "raw_matches_display_precision": 8,
+      "unmatched_extreme_pct": -6.98,
+      "status": "strong_support_for_qfq_60session_returns_not_proof_of_sample_membership",
+      "evidence_file": "research/fuli_time/reproduction/return_extreme_identity.json"
+    },
+    "construction": "apply frozen proxy retrospectively, same 10-point score bin, only complete 60-session returns; default drop out-of-domain features",
+    "comparison": [
+      {
+        "date": "2026-11-02",
+        "score_proxy": 16.312652792499083,
+        "status": "independent_proxy_statistic_low_sample",
+        "is_original_backtest": false,
+        "score_input": "published_indicator_conditioned",
+        "same_score_samples_proxy": 9,
+        "forward_60d_mean_pct_proxy": 5.09073374392193,
+        "forward_60d_median_pct_proxy": 7.354260089686115,
+        "forward_60d_min_pct_proxy": -3.1092436974789806,
+        "forward_60d_max_pct_proxy": 8.206958073148973,
+        "positive_return_ratio_pct_proxy": 77.77777777777779,
+        "observed_same_score_samples": 153.0,
+        "observed_forward_60d_mean_pct": 0.15,
+        "mean_absolute_error_pp": 4.940733743921929
+      },
+      {
+        "date": "2026-11-03",
+        "score_proxy": 24.756617743592365,
+        "status": "independent_proxy_statistic",
+        "is_original_backtest": false,
+        "score_input": "published_indicator_conditioned",
+        "same_score_samples_proxy": 47,
+        "forward_60d_mean_pct_proxy": 4.5937426994968975,
+        "forward_60d_median_pct_proxy": 5.071174377224197,
+        "forward_60d_min_pct_proxy": -4.264392324093813,
+        "forward_60d_max_pct_proxy": 13.455657492354733,
+        "positive_return_ratio_pct_proxy": 80.85106382978722,
+        "observed_same_score_samples": 161.0,
+        "observed_forward_60d_mean_pct": 1.31,
+        "mean_absolute_error_pp": 3.2837426994968975
+      },
+      {
+        "date": "2026-11-04",
+        "score_proxy": 14.79743511338225,
+        "status": "independent_proxy_statistic_low_sample",
+        "is_original_backtest": false,
+        "score_input": "published_indicator_conditioned",
+        "same_score_samples_proxy": 9,
+        "forward_60d_mean_pct_proxy": 5.09073374392193,
+        "forward_60d_median_pct_proxy": 7.354260089686115,
+        "forward_60d_min_pct_proxy": -3.1092436974789806,
+        "forward_60d_max_pct_proxy": 8.206958073148973,
+        "positive_return_ratio_pct_proxy": 77.77777777777779,
+        "observed_same_score_samples": 153.0,
+        "observed_forward_60d_mean_pct": 0.15,
+        "mean_absolute_error_pp": 4.940733743921929
+      },
+      {
+        "date": "2026-11-05",
+        "score_proxy": 41.077083387965374,
+        "status": "independent_proxy_statistic",
+        "is_original_backtest": false,
+        "score_input": "published_indicator_conditioned",
+        "same_score_samples_proxy": 40,
+        "forward_60d_mean_pct_proxy": 5.2496985096509885,
+        "forward_60d_median_pct_proxy": 7.36755410993063,
+        "forward_60d_min_pct_proxy": -10.934891485809683,
+        "forward_60d_max_pct_proxy": 14.876033057851235,
+        "positive_return_ratio_pct_proxy": 72.5,
+        "observed_same_score_samples": 193.0,
+        "observed_forward_60d_mean_pct": 3.14,
+        "mean_absolute_error_pp": 2.1096985096509884
+      },
+      {
+        "date": "2026-11-06",
+        "score_proxy": 28.05491957543866,
+        "status": "independent_proxy_statistic",
+        "is_original_backtest": false,
+        "score_input": "published_indicator_conditioned",
+        "same_score_samples_proxy": 47,
+        "forward_60d_mean_pct_proxy": 4.5937426994968975,
+        "forward_60d_median_pct_proxy": 5.071174377224197,
+        "forward_60d_min_pct_proxy": -4.264392324093813,
+        "forward_60d_max_pct_proxy": 13.455657492354733,
+        "positive_return_ratio_pct_proxy": 80.85106382978722,
+        "observed_same_score_samples": 166.0,
+        "observed_forward_60d_mean_pct": 2.46,
+        "mean_absolute_error_pp": 2.1337426994968975
+      }
+    ]
+  },
+  "crowding": {
+    "original_formula_identified": false,
+    "reason": "Image names A-share capital concentration but does not publish numerator, denominator, universe or lookback; no OHLC-only proxy is labelled as original crowding."
+  },
+  "limits": [
+    "Published-input score error does not include errors of independently fetched market indicators.",
+    "Independent 11:30 validation uses calculated values from technical_validation.csv; published column is not a feature input.",
+    "Five holdout dates are a narrow sample; tomorrow may enter a new regime.",
+    "Historical distributions have different sample counts/returns from author; not accepted as original reconstruction.",
+    "No frozen author-return histogram or date lookup is used to make forecasts."
+  ]
+}

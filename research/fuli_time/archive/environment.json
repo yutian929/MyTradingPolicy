@@ -1,0 +1,12 @@
+{
+  "rapidocr-onnxruntime": "1.4.4",
+  "onnxruntime": "1.23.2",
+  "Pillow": "12.3.0",
+  "numpy": "2.2.6",
+  "python": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+  "ocr_engine": "RapidOCR ONNXRuntime",
+  "capture": "Authenticated in-app browser, visible DOM and downloadMedia",
+  "capture_date": "2026-11-08",
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai"
+}

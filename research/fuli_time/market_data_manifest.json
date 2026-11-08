@@ -1,0 +1,16 @@
+{
+  "captured_date": "2026-11-08",
+  "timezone": "Asia/Shanghai",
+  "akshare_version": "1.18.88",
+  "api": "fund_etf_hist_em",
+  "symbol": "512890",
+  "start_date": "20190101",
+  "end_date": "20261106",
+  "adjustments": [
+    "",
+    "qfq"
+  ],
+  "row_count_per_series": 1889,
+  "source": "Eastmoney via AkShare",
+  "purpose": "Reproduce public indicator definitions, not original composite score"
+}

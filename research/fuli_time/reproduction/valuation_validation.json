@@ -1,0 +1,92 @@
+{
+  "source_comparisons": [
+    {
+      "metric": "bond_yield_10y_pct",
+      "split": "development",
+      "n": 32,
+      "mae": 0.0021062499999999484,
+      "max_abs_error": 0.005499999999999838
+    },
+    {
+      "metric": "bond_yield_10y_pct",
+      "split": "holdout",
+      "n": 5,
+      "mae": 0.0022800000000000155,
+      "max_abs_error": 0.0043000000000001926
+    },
+    {
+      "metric": "dividend_yield_pct",
+      "split": "development",
+      "n": 10,
+      "mae": 0.23000000000000007,
+      "max_abs_error": 0.5100000000000007
+    },
+    {
+      "metric": "dividend_yield_pct",
+      "split": "holdout",
+      "n": 5,
+      "mae": 0.0,
+      "max_abs_error": 0.0
+    },
+    {
+      "metric": "equity_bond_spread_pp",
+      "split": "development",
+      "n": 10,
+      "mae": 0.23125000000000012,
+      "max_abs_error": 0.5100000000000002
+    },
+    {
+      "metric": "equity_bond_spread_pp",
+      "split": "holdout",
+      "n": 5,
+      "mae": 0.0022799999999999266,
+      "max_abs_error": 0.0042999999999997485
+    },
+    {
+      "metric": "pe_ttm",
+      "split": "development",
+      "n": 10,
+      "mae": 0.34299999999999997,
+      "max_abs_error": 0.5200000000000014
+    },
+    {
+      "metric": "pe_ttm",
+      "split": "holdout",
+      "n": 5,
+      "mae": 0.4080000000000002,
+      "max_abs_error": 0.5
+    },
+    {
+      "metric": "pe_ttm_csi2",
+      "split": "development",
+      "n": 10,
+      "mae": 0.944,
+      "max_abs_error": 1.290000000000001
+    },
+    {
+      "metric": "pe_ttm_csi2",
+      "split": "holdout",
+      "n": 5,
+      "mae": 1.0720000000000003,
+      "max_abs_error": 1.2400000000000002
+    }
+  ],
+  "roe_formula_diagnostic": {
+    "status": "uses_published_PE_PB_inputs_only_not_independent_prediction",
+    "n": 39,
+    "max_abs_error_pp": 0.05943052391799597,
+    "mae_pp": 0.032952545995242916
+  },
+  "limitations": [
+    "CSI data supports only recent20 dates; missing earlier observations are not invented",
+    "DY1 matches recent5 holdout dates but October source discrepancies remain",
+    "CSI PE1/PE2 are not accepted as Danjuan/Xueqiu PE TTM",
+    "No supported AkShare H30269 PB/ten-year valuation history found",
+    "Market fund flow columns do not establish author crowding definition"
+  ],
+  "documentation": [
+    "https://akshare.akfamily.xyz/data/fund/fund_public.html",
+    "https://akshare.akfamily.xyz/data/index/index.html",
+    "https://github.com/akfamily/akshare/issues/5508"
+  ]
+}
