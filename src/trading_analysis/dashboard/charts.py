@@ -4,7 +4,8 @@ from plotly.subplots import make_subplots
 
 from trading_analysis.dashboard.data import PERIODS
 
-COLORS = ("#b58900", "#db2777", "#0284c7", "#7c3aed", "#ea580c", "#0d9488")
+# Ascending periods use distinct hues with decreasing lightness; avoid candle reds/greens.
+COLORS = ("#c9b45a", "#63a9ce", "#a684c5", "#4b6c9e", "#684074", "#30343b")
 
 
 def build_chart(frame, selected=PERIODS, *, nav=False):
