@@ -3,6 +3,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 from trading_analysis.dashboard.data import PERIODS
+from trading_analysis.dashboard.valuation import PREMIUM
 
 # Ascending periods use distinct hues with decreasing lightness; avoid candle reds/greens.
 COLORS = ("#c9b45a", "#63a9ce", "#a684c5", "#4b6c9e", "#684074", "#30343b")
@@ -13,10 +14,11 @@ def available_panels(frame, *, nav=False):
     return [name for name in PANELS if name != "成交量" or (not nav and "volume" in frame)]
 
 
-def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",)):
+def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",), valuations=()):
     panels = [name for name in available_panels(frame, nav=nav) if name in panels]
-    fig = make_subplots(rows=1 + len(panels), cols=1, shared_xaxes=True,
-                        vertical_spacing=0.035, row_heights=[3] + [1] * len(panels))
+    panel_count = len(panels) + len(valuations)
+    fig = make_subplots(rows=1 + panel_count, cols=1, shared_xaxes=True,
+                        vertical_spacing=0.035, row_heights=[3] + [1] * panel_count)
     if nav:
         fig.add_trace(go.Scatter(x=frame.date, y=frame.close, name="单位净值",
                                 line=dict(color="#0284c7", width=2), showlegend=False), row=1, col=1)
@@ -59,7 +61,20 @@ def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",)):
                               row=row, col=1)
             fig.update_yaxes(title_text="RSI (14)", range=[0, 100],
                              tickvals=[0, 30, 50, 70, 100], row=row, col=1)
-    fig.update_layout(height=500 + 180 * len(panels), template="plotly_white", margin=dict(l=10, r=10, t=25, b=10),
+    for row, item in enumerate(valuations, start=2 + len(panels)):
+        history = item.frame.loc[item.frame.date.between(frame.date.min(), frame.date.max())]
+        # Preserve source dates and missing trading days; never carry an old valuation forward.
+        dates = frame.set_index("date").index.union(history.set_index("date").index).sort_values()
+        values = history.set_index("date").value.reindex(dates)
+        fig.add_trace(go.Scatter(x=dates, y=values, mode="lines", name=item.metric,
+                                line=dict(color="#684074", width=1.8), connectgaps=False,
+                                showlegend=False,
+                                hovertemplate=item.metric + ": %{y:.3f}" + item.unit
+                                + "<br>数据日期：%{x|%Y-%m-%d}<extra></extra>"), row=row, col=1)
+        fig.update_yaxes(title_text=f"{item.metric}（{item.unit}）", row=row, col=1)
+        if item.metric == PREMIUM:
+            fig.add_hline(y=0, line_color="#a3a3a3", line_dash="dot", row=row, col=1)
+    fig.update_layout(height=500 + 180 * panel_count, template="plotly_white", margin=dict(l=10, r=10, t=25, b=10),
                       paper_bgcolor="#ffffff", plot_bgcolor="#ffffff", hovermode="x unified",
                       hoversubplots="axis", hoverdistance=20, spikedistance=-1,
                       font=dict(color="#404040"),
@@ -75,9 +90,9 @@ def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",)):
     for shape in fig.layout.shapes:
         if shape.xref and shape.xref.startswith("x"):
             shape.xref = "x domain" if shape.xref.endswith(" domain") else "x"
-    for row in range(2, len(panels) + 2):
+    for row in range(2, panel_count + 2):
         fig.layout[f"xaxis{row}"] = None
-    fig.update_layout(xaxis=dict(matches=None, anchor=f"y{len(panels) + 1}" if panels else "y",
+    fig.update_layout(xaxis=dict(matches=None, anchor=f"y{panel_count + 1}" if panel_count else "y",
                                  showticklabels=True, showspikes=True, spikemode="across",
                                  spikesnap="data", spikecolor="#737373", spikethickness=1,
                                  spikedash="dash", hoverformat="%Y-%m-%d"))

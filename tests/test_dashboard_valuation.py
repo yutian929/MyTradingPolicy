@@ -133,6 +133,30 @@ class ValuationTests(unittest.TestCase):
 
 
 class ValuationUITests(unittest.TestCase):
+    def test_valuation_subplots_share_crosshair_and_preserve_missing_dates(self):
+        from trading_analysis.dashboard.charts import build_chart
+        dates = pd.bdate_range('2026-01-01', periods=5)
+        prices = pd.DataFrame(dict(date=dates, open=10., high=11., low=9., close=10., volume=100.))
+        items = [Valuation(metric, pd.DataFrame({'date': dates[[0, 2, 3]], 'value': [1., 2., np.nan]}),
+                           unit, 'formula', 'note')
+                 for metric, unit in [(PREMIUM, '%'), (PE, '倍'), (PB, '倍'), (DIVIDEND, '%')]]
+        for panels in ([], ['成交量']):
+            fig = build_chart(prices, [], panels=panels, valuations=items)
+            self.assertEqual({t.xaxis for t in fig.data}, {'x'})
+            self.assertEqual(len({t.yaxis for t in fig.data}), 1 + len(panels) + len(items))
+            self.assertEqual(fig.layout.xaxis.anchor, f'y{1 + len(panels) + len(items)}')
+            self.assertEqual(fig.layout.hoversubplots, 'axis')
+            for item, trace in zip(items, fig.data[-4:]):
+                self.assertEqual(trace.name, item.metric)
+                self.assertEqual(list(pd.to_datetime(trace.x)), list(dates))
+                np.testing.assert_allclose(trace.y, [1., np.nan, 2., np.nan, np.nan], equal_nan=True)
+                self.assertFalse(trace.connectgaps)
+                self.assertFalse(trace.showlegend)
+            self.assertEqual(fig.layout.shapes[0].yref, f'y{2 + len(panels)}')
+            self.assertEqual(fig.layout.shapes[0].xref, 'x domain')
+        empty = build_chart(prices.iloc[-1:], [], panels=[], valuations=items)
+        self.assertTrue(all(np.isnan(t.y).all() for t in empty.data[-4:]))
+
     def test_lazy_loading_failure_isolation_and_asset_switch(self):
         import streamlit as st
         from streamlit.testing.v1 import AppTest
@@ -164,6 +188,10 @@ class ValuationUITests(unittest.TestCase):
             self.assertFalse(app.exception)
             self.assertTrue(any('PB 暂不可用' in w.value for w in app.warning))
             self.assertTrue(any(m.label == '近5年历史分位' for m in app.metric))
+            self.assertEqual(len(app.get('plotly_chart')), 1)
+            chart = json.loads(app.get('plotly_chart')[0].proto.spec)
+            self.assertIn(PE, [t['name'] for t in chart['data']])
+            self.assertNotIn(PB, [t['name'] for t in chart['data']])
             next(w for w in app.selectbox if w.label == '标的类型').set_value('基金（ETF）').run()
             # Applied valuation options follow the submitted request, not a half-edited form.
             self.assertIn(PE, app.multiselect[1].options)
@@ -174,6 +202,13 @@ class ValuationUITests(unittest.TestCase):
             app.multiselect[1].set_value(['成交量', PREMIUM]).run()
             self.assertFalse(app.exception)
             self.assertFalse(any(c.label == '显示历史分位' for c in app.checkbox))
+            self.assertEqual(len(app.get('plotly_chart')), 1)
+            chart = json.loads(app.get('plotly_chart')[0].proto.spec)
+            premium = next(t for t in chart['data'] if t['name'] == PREMIUM)
+            self.assertEqual(premium['xaxis'], 'x')
+            self.assertEqual(premium['yaxis'], 'y3')
+            self.assertFalse(any(s.value == '估值参考' for s in app.subheader))
+            self.assertTrue(any(e.label == '副图指标说明与数据' for e in app.expander))
             loader.reset_mock()
             app.multiselect[1].set_value([]).run()
             self.assertFalse(app.exception)

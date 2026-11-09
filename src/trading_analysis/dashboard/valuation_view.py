@@ -1,6 +1,5 @@
-"""Optional valuation cards and independent, source-dated charts."""
+"""Load optional valuation subplots and render their supporting details."""
 import numpy as np
-import plotly.graph_objects as go
 import streamlit as st
 
 from trading_analysis.dashboard.valuation import (
@@ -13,25 +12,28 @@ def fetch_valuation_source(api, params):
     return read_source(api, params)
 
 
-def valuation_chart(item, start, end):
-    frame = item.frame.loc[item.frame.date.between(start, end)]
-    fig = go.Figure(go.Scatter(x=frame.date, y=frame.value, mode="lines", name=item.metric,
-                              line=dict(color="#684074", width=1.8), connectgaps=False,
-                              hovertemplate="%{x|%Y-%m-%d}<br>%{y:.3f}" + item.unit + "<extra></extra>"))
-    if item.metric == PREMIUM:
-        fig.add_hline(y=0, line_color="#a3a3a3", line_dash="dot")
-    fig.update_layout(height=240, template="plotly_white", margin=dict(l=10, r=10, t=10, b=10),
-                      showlegend=False, paper_bgcolor="#ffffff", plot_bgcolor="#ffffff",
-                      font=dict(color="#404040"), hovermode="x unified", dragmode="pan")
-    fig.update_xaxes(range=[start, end], showgrid=False)
-    fig.update_yaxes(title_text=item.unit, gridcolor="#eeeeee", fixedrange=False)
-    return fig
+def load_selected_valuations(symbol, kind, metrics):
+    items = []
+    for metric in metrics:
+        try:
+            with st.spinner(f"正在加载{metric}…"):
+                items.append(load_valuation(symbol, kind, metric, reader=fetch_valuation_source))
+        except Exception as exc:
+            st.warning(f"{metric} 暂不可用，行情和其他指标仍可使用。")
+            with st.expander("查看数据问题"):
+                st.write(str(exc))
+    return items
 
 
-def render_valuations(symbol, kind, metrics, start, end):
-    if not metrics:
+def render_valuation_details(symbol, kind, items, start, end):
+    if not items:
         return
-    st.subheader("估值参考")
+    with st.expander("副图指标说明与数据"):
+        _render_details(symbol, kind, items, start, end)
+
+
+def _render_details(symbol, kind, items, start, end):
+    metrics = [item.metric for item in items]
     show_rank = False
     years = 5
     if metrics != [PREMIUM]:
@@ -41,17 +43,10 @@ def render_valuations(symbol, kind, metrics, start, end):
                                  format_func=lambda value: f"近{value}年")
             st.caption("分位按所选窗口内有效观测计算，包含最近记录；PE/PB 分位低表示相对历史便宜，股息率方向相反。"
                        "20% / 80% 仅作区间标记，不代表未来涨跌概率。")
-    for metric in metrics:
+    for item in items:
+        metric = item.metric
         with st.container(border=True):
             st.write(f"**{metric}**")
-            try:
-                with st.spinner(f"正在加载{metric}…"):
-                    item = load_valuation(symbol, kind, metric, reader=fetch_valuation_source)
-            except Exception as exc:
-                st.warning(f"{metric} 暂不可用，行情和其他指标仍可使用。")
-                with st.expander("查看数据问题"):
-                    st.write(str(exc))
-                continue
             latest = item.frame.iloc[-1]
             finite = np.isfinite(latest.value)
             columns = st.columns(2) if show_rank else st.columns(1)
@@ -75,11 +70,7 @@ def render_valuations(symbol, kind, metrics, start, end):
                        f"{len(item.frame)} 条记录。曲线使用上方所选行情时间范围。")
             if item.metric == PREMIUM:
                 st.caption("日终折溢价，不是盘中 IOPV；黄金 ETF 折溢价不等于黄金本身的估值。")
-            if item.frame.date.between(start, end).any():
-                st.plotly_chart(valuation_chart(item, start, end), width="stretch", theme=None,
-                                key=f"valuation_chart_{kind}_{symbol}_{metric}",
-                                config={"scrollZoom": True, "displaylogo": False})
-            else:
+            if not item.frame.date.between(start, end).any():
                 st.info("所选行情时间范围内没有该指标的数据。")
             with st.expander("计算口径与数据"):
                 st.write(item.formula)

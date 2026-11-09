@@ -7,7 +7,9 @@ from trading_analysis.cli import TYPE_LABELS
 from trading_analysis.dashboard.charts import available_panels, build_chart
 from trading_analysis.dashboard.data import KINDS, PERIODS, load_history, select_range
 from trading_analysis.dashboard.valuation import valuation_options
-from trading_analysis.dashboard.valuation_view import fetch_valuation_source, render_valuations
+from trading_analysis.dashboard.valuation_view import (
+    fetch_valuation_source, load_selected_valuations, render_valuation_details,
+)
 
 st.set_page_config(page_title="行情看板", layout="wide")
 # Keep interface accents neutral without changing financial chart colors.
@@ -88,7 +90,11 @@ if years and len(visible) == len(full):
     st.info(f"可用历史不足或恰好 {years} 年，已展示全部可用历史。")
 if nav:
     st.info("场外基金没有开高低收日 K，展示单位净值曲线；均线按净值记录计算，未做分红再投资调整。")
-st.plotly_chart(build_chart(visible, selected, nav=nav, panels=panels), width="stretch", theme=None,
+valuations = load_selected_valuations(request[0], request[1], valuation_metrics)
+for item in valuations:
+    if not item.frame.loc[item.frame.date.between(visible.date.min(), visible.date.max()), "value"].notna().any():
+        st.info(f"{item.metric}：所选行情时间范围内没有有效数据。")
+st.plotly_chart(build_chart(visible, selected, nav=nav, panels=panels, valuations=valuations), width="stretch", theme=None,
                 config={"scrollZoom": True, "displaylogo": False})
 st.caption("均线按全部历史的最近 N 条日线收盘价计算，记录不足 N 条时留空。时间范围以最新数据日为终点；可拖动、滚轮缩放或双击复位。红涨绿跌；均线以不同颜色区分。")
 if "MACD" in panels:
@@ -106,4 +112,4 @@ with st.expander("查看日线数据 / 下载"):
     st.download_button("下载当前范围 CSV", visible.to_csv(index=False).encode("utf-8-sig"),
                        file_name=f"{request[0]}_{range_label}.csv", mime="text/csv")
 st.caption(f"获取时间：{bundle.metadata.get('fetched_at', '未知')} · 来源接口：{bundle.metadata['api']}")
-render_valuations(request[0], request[1], valuation_metrics, visible.date.min(), visible.date.max())
+render_valuation_details(request[0], request[1], valuations, visible.date.min(), visible.date.max())
