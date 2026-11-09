@@ -17,6 +17,51 @@ Notebook 安装与启动方法见 `notebooks/README.md`。
 
 ## 安装与运行
 
+### 行情看板
+
+```bash
+source .venv/bin/activate
+python -m pip install -e '.[dashboard]'
+mtp viewer
+```
+
+安装一次后，在已激活该 Python 环境的任意目录均可运行：
+
+```bash
+mtp viewer                         # 默认沪深 300
+mtp viewer 600519                   # 股票
+mtp viewer 510300                   # ETF
+mtp viewer 050025                   # 场外基金
+mtp viewer 000001 --type index      # 上证指数；同码股票用 --type stock
+mtp viewer 161725 --type lof        # LOF
+mtp viewer --port 8502              # 8501 已被占用时
+mtp viewer --no-browser             # 不自动打开浏览器
+mtp viewer --help
+```
+
+命令在前台运行，自动打开本机浏览器，按 `Ctrl+C` 停止。`--type` 支持
+`stock/index/etf/lof/fund`。省略类型时按常见代码规则推测，存在同码或例外时需显式指定，
+也可在页面重新选择；仅凭六位代码无法唯一识别所有市场的标的。
+如果提示找不到 `mtp`，请先激活安装时的环境（本项目为 `source .venv/bin/activate`）。
+
+看板界面默认使用浅色黑白灰主题；行情图保留红涨绿跌，六条均线通过不同颜色区分。
+`mtp viewer` 从任意目录启动都会使用相同主题。
+
+浏览器打开终端显示的本地地址（默认 `http://localhost:8501`）。选择标的类型并输入六位代码，
+点击「查询行情」。支持 A 股、指数、ETF、LOF，以及场外基金单位净值。
+默认加载沪深 300（000300），可切换全部、10 年、5 年、1 年；范围以最新可用数据日为终点，
+历史不足时展示全部可用记录。数据源不一定覆盖上市或成立首日，页面显示实际起止日期。
+
+MA5、MA10、MA20、MA30、MA60、MA120 按全部历史收盘价计算后截取显示区间，
+可通过多选框移除或点击图例隐藏。支持缩放、成交量、原始数据查看和 CSV 下载。
+股票、ETF、LOF 可选择不复权、前复权、后复权；场外基金没有 OHLC，展示单位净值曲线，
+均线按净值记录计算。场外基金净值不含分红再投资，不代表总回报。
+
+行情通过 AkShare 获取，内存缓存 1 小时，可手动刷新；单次请求超时 60 秒。
+原始数据及来源记录位于 `~/.cache/my-trading-policy/dashboard/`（设置了 `XDG_CACHE_HOME` 时使用该目录）；
+失败时显示错误，不以旧缓存冒充最新行情。
+运行测试：`python -m unittest discover -s tests`（需安装 dashboard 可选依赖）。
+
 需要 Python 3.10 或更新版本。在项目根目录执行：
 
 ```bash

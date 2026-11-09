@@ -15,7 +15,11 @@ dependencies = [
     "matplotlib",
 ]
 
+[project.scripts]
+mtp = "trading_analysis.cli:main"
+
 [project.optional-dependencies]
+dashboard = ["streamlit>=1.53,<2", "plotly>=5"]
 notebook = ["jupyterlab", "nbclient", "ipykernel", "plotly>=5"]
 
 [tool.setuptools.packages.find]

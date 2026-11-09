@@ -15,7 +15,9 @@ import pandas as pd
 
 TZ = ZoneInfo('Asia/Shanghai')
 ALLOWED_APIS = {'fund_etf_hist_em', 'fund_etf_hist_min_em', 'bond_zh_us_rate',
-                'stock_zh_index_value_csindex', 'stock_market_fund_flow'}
+                'stock_zh_index_value_csindex', 'stock_market_fund_flow',
+                'stock_zh_a_hist', 'index_zh_a_hist', 'fund_lof_hist_em',
+                'fund_open_fund_info_em'}
 RENAME = {'日期':'date', '时间':'datetime', '开盘':'open', '最高':'high', '最低':'low',
           '收盘':'close', '成交量':'volume', '成交额':'amount', '涨跌幅':'daily_return_pct'}
 
