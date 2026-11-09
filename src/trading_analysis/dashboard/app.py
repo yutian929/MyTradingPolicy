@@ -4,8 +4,10 @@ import streamlit as st
 
 from trading_analysis.cli import TYPE_LABELS
 
-from trading_analysis.dashboard.charts import build_chart
+from trading_analysis.dashboard.charts import available_panels, build_chart
 from trading_analysis.dashboard.data import KINDS, PERIODS, load_history, select_range
+from trading_analysis.dashboard.valuation import valuation_options
+from trading_analysis.dashboard.valuation_view import fetch_valuation_source, render_valuations
 
 st.set_page_config(page_title="行情看板", layout="wide")
 # Keep interface accents neutral without changing financial chart colors.
@@ -44,6 +46,7 @@ if submitted:
 request = st.session_state.get("request", (initial_symbol, initial_kind, ""))
 if refresh:
     fetch.clear(*request)
+    fetch_valuation_source.clear()
 try:
     with st.spinner("正在获取全部历史日线，最多等待 60 秒…"):
         bundle = fetch(*request)
@@ -60,8 +63,23 @@ a.metric("最新单位净值" if nav else "最新收盘", f"{full.close.iloc[-1]
 b.metric("最新数据日期", full.date.max().strftime("%Y-%m-%d"))
 c.metric("历史记录", f"{len(full):,} 条")
 range_label = st.radio("显示范围", ["全部", "10年", "5年", "1年"], horizontal=True)
-selected = st.multiselect("显示均线（可移除，也可点击图例临时隐藏）", PERIODS, default=list(PERIODS),
-                         format_func=lambda n: f"MA{n}")
+selected = st.multiselect("主图指标", PERIODS, default=list(PERIODS),
+                         format_func=lambda n: f"MA{n}",
+                         help="可移除均线，也可点击图例临时隐藏。")
+panel_options = available_panels(full, nav=nav)
+valuation_choices = valuation_options(request[0], request[1])
+selected_panels = st.multiselect("副图指标", panel_options + valuation_choices,
+                                default=["成交量"] if "成交量" in panel_options else [],
+                                key=f"panel_selection_{request[1]}_{request[0]}",
+                                help="统一选择成交量、MACD、RSI（14）和当前标的适用的估值指标，也可全部清空。估值数据按需加载。")
+panels = [name for name in selected_panels if name in panel_options]
+valuation_metrics = [name for name in selected_panels if name in valuation_choices]
+if request[1] in ("基金（ETF）", "基金（LOF）"):
+    st.caption("场内基金（含黄金 ETF）提供日终折溢价；股票 ETF 的 PE/PB 请查询其跟踪指数，黄金不套用企业 PE/PB。")
+elif not valuation_choices:
+    st.caption("场外基金不提供场内折溢价；持仓估值需对应持仓或跟踪指数数据，当前不直接套用个股 PE/PB。")
+elif request[1] == "指数":
+    st.caption("估值接口覆盖因指数而异，部分指数没有 PB 或长期历史；不可用时会单独提示。")
 years = {"全部": None, "10年": 10, "5年": 5, "1年": 1}[range_label]
 visible = select_range(full, years)
 st.caption(f"{visible.date.min():%Y-%m-%d} — {visible.date.max():%Y-%m-%d} · {len(visible):,} 条日线 · "
@@ -70,11 +88,22 @@ if years and len(visible) == len(full):
     st.info(f"可用历史不足或恰好 {years} 年，已展示全部可用历史。")
 if nav:
     st.info("场外基金没有开高低收日 K，展示单位净值曲线；均线按净值记录计算，未做分红再投资调整。")
-st.plotly_chart(build_chart(visible, selected, nav=nav), width="stretch", theme=None,
+st.plotly_chart(build_chart(visible, selected, nav=nav, panels=panels), width="stretch", theme=None,
                 config={"scrollZoom": True, "displaylogo": False})
 st.caption("均线按全部历史的最近 N 条日线收盘价计算，记录不足 N 条时留空。时间范围以最新数据日为终点；可拖动、滚轮缩放或双击复位。红涨绿跌；均线以不同颜色区分。")
+if "MACD" in panels:
+    st.caption("MACD(12,26,9)：DIF = EMA12 − EMA26，DEA = DIF 的 EMA9，柱 = 2 × (DIF − DEA)。"
+               "按完整历史计算后截取显示范围，EMA 以首个收盘价（基金为单位净值）初始化；前 33 条记录留空。正柱红色，负柱绿色。")
+    if full.macd_dif.notna().sum() == 0:
+        st.info("可用历史不足 34 条，MACD 暂无有效值。")
+if "RSI" in panels:
+    st.caption("RSI(14) 使用 Wilder 平滑，先按完整历史收盘价（基金为单位净值）计算后截取区间；"
+               "前 14 条记录留空。纵轴 0–100，虚线为 30 / 70 参考线。")
+    if full.rsi14.notna().sum() == 0:
+        st.info("RSI 暂无有效值：需至少 15 条价格记录，且历史中存在涨跌。")
 with st.expander("查看日线数据 / 下载"):
     st.dataframe(visible, width="stretch", hide_index=True)
     st.download_button("下载当前范围 CSV", visible.to_csv(index=False).encode("utf-8-sig"),
                        file_name=f"{request[0]}_{range_label}.csv", mime="text/csv")
 st.caption(f"获取时间：{bundle.metadata.get('fetched_at', '未知')} · 来源接口：{bundle.metadata['api']}")
+render_valuations(request[0], request[1], valuation_metrics, visible.date.min(), visible.date.max())

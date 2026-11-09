@@ -7,6 +7,7 @@ import re
 import numpy as np
 import pandas as pd
 
+from trading_analysis.common.indicators import macd, rsi_wilder
 from trading_analysis.data.akshare_provider import AkShareProvider, DataUnavailable, TZ, normalize_ohlcv
 
 PERIODS = (5, 10, 20, 30, 60, 120)
@@ -48,6 +49,9 @@ def load_history(symbol, kind, adjust="", provider=None):
                     or (frame.low > frame[columns].min(axis=1)).any()):
         raise DataUnavailable("数据源返回不一致的日 K 价格。")
     bundle.frame = add_averages(frame)
+    macd_values = macd(bundle.frame.close)
+    bundle.frame[macd_values.columns] = macd_values
+    bundle.frame["rsi14"] = rsi_wilder(bundle.frame.close)
     bundle.metadata.update(symbol=symbol, kind=kind, nav=nav,
                            price_adjustment=adjust or "none")
     return bundle

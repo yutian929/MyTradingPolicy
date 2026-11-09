@@ -10,6 +10,8 @@ import math
 import numpy as np
 import pandas as pd
 
+from trading_analysis.common.indicators import macd, rsi_wilder as _rsi_wilder
+
 
 @dataclass(frozen=True)
 class IndicatorConfig:
@@ -118,24 +120,6 @@ def _validated_prices(prices: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def _rsi_wilder(close: pd.Series, period: int = 14) -> pd.Series:
-    """先用 period 个涨跌幅的简单均值初始化，然后 Wilder 递推。"""
-    delta = close.diff()
-    gains, losses = delta.clip(lower=0), -delta.clip(upper=0)
-    result = pd.Series(np.nan, index=close.index, dtype=float)
-    if len(close) <= period:
-        return result
-    avg_gain, avg_loss = gains.iloc[1:period + 1].mean(), losses.iloc[1:period + 1].mean()
-    for i in range(period, len(close)):
-        if i > period:
-            avg_gain = (avg_gain * (period - 1) + gains.iloc[i]) / period
-            avg_loss = (avg_loss * (period - 1) + losses.iloc[i]) / period
-        # 平价且从未涨跌时 RSI 不可定义，保留 NaN。
-        if avg_gain + avg_loss > 0:
-            result.iloc[i] = 100 * avg_gain / (avg_gain + avg_loss)
-    return result
-
-
 def _kdj(df: pd.DataFrame, seed: float) -> tuple[pd.Series, pd.Series, pd.Series]:
     low, high = df["low"].rolling(9).min(), df["high"].rolling(9).max()
     rsv = 100 * (df["close"] - low) / (high - low).replace(0, np.nan)
@@ -165,14 +149,8 @@ def compute_indicators(prices: pd.DataFrame, config: IndicatorConfig | None = No
     df["ma250"] = close.rolling(250).mean()
     df["ma250_bias_pct"] = (close / df["ma250"] - 1) * 100
     df["rsi14"] = _rsi_wilder(close)
-    # MACD(12,26,9): recursive EMA seeded with the first close; DEA starts at 0.
-    # Publish only after 34 observations, without backfilling the warm-up period.
-    dif = close.ewm(span=12, adjust=False).mean() - close.ewm(span=26, adjust=False).mean()
-    dea = dif.ewm(span=9, adjust=False).mean()
-    warmed = np.arange(len(df)) >= 33
-    df["macd_dif"] = dif.where(warmed)
-    df["macd_dea"] = dea.where(warmed)
-    df["macd_histogram"] = (2 * (dif - dea)).where(warmed)
+    macd_values = macd(close)
+    df[macd_values.columns] = macd_values
     for days in (5, 10, 20):
         df[f"momentum_{days}d_pct"] = close.pct_change(days, fill_method=None) * 100
     df["kdj_k"], df["kdj_d"], df["kdj_j"] = _kdj(df, config.kdj_seed)

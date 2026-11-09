@@ -17,7 +17,8 @@ TZ = ZoneInfo('Asia/Shanghai')
 ALLOWED_APIS = {'fund_etf_hist_em', 'fund_etf_hist_min_em', 'bond_zh_us_rate',
                 'stock_zh_index_value_csindex', 'stock_market_fund_flow',
                 'stock_zh_a_hist', 'index_zh_a_hist', 'fund_lof_hist_em',
-                'fund_open_fund_info_em'}
+                'fund_open_fund_info_em', 'stock_value_em', 'stock_index_pe_lg',
+                'stock_index_pb_lg', 'stock_history_dividend_detail'}
 RENAME = {'日期':'date', '时间':'datetime', '开盘':'open', '最高':'high', '最低':'low',
           '收盘':'close', '成交量':'volume', '成交额':'amount', '涨跌幅':'daily_return_pct'}
 
@@ -70,7 +71,7 @@ class AkShareProvider:
         self.cache_only=bool(cache_only)
         if self.timeout_seconds <= 0:raise ValueError('timeout_seconds must be positive')
 
-    def _read(self, api, params, *, normalize=False):
+    def _read(self, api, params, *, normalize=False, allow_empty=False):
         if api not in ALLOWED_APIS:raise ValueError('Unsupported API')
         identity=json.dumps({'api':api,'params':params},sort_keys=True,separators=(',',':'))
         key=hashlib.sha256(identity.encode()).hexdigest()[:20]
@@ -91,14 +92,16 @@ class AkShareProvider:
                 response=json.loads(completed.stdout)
                 if not response.get('ok'):raise DataUnavailable(response.get('error','Unknown API failure'))
                 frame=pd.read_json(io.StringIO(json.dumps(response['table'])),orient='table')
-                if frame.empty:raise DataUnavailable(f'{api} returned no rows for {params}')
+                if frame.empty and not allow_empty:raise DataUnavailable(f'{api} returned no rows for {params}')
             except (subprocess.TimeoutExpired,ValueError,DataUnavailable) as exc:
                 failure={'api':api,'params':params,'requested_at':started,'status':'failed','error':str(exc)}
                 (self.cache_dir/f'{api}_{key}.failure.json').write_text(json.dumps(failure,ensure_ascii=False,indent=2))
                 raise DataUnavailable(f'{api}: {exc}; old cache was not substituted') from exc
             frame.to_csv(path,index=False)
-            dates=frame['时间'] if '时间' in frame else frame['日期'] if '日期' in frame else None
-            meta={'api':api,'params':params,'provider':'CSI via AkShare' if 'csindex' in api else 'Eastmoney via AkShare',
+            dates=next((frame[c] for c in ('时间','日期','数据日期','净值日期') if c in frame), None)
+            provider = ('CSI' if 'csindex' in api else 'Legulegu' if api.endswith('_lg') else
+                        'Sina' if api == 'stock_history_dividend_detail' else 'Eastmoney')
+            meta={'api':api,'params':params,'provider':provider + ' via AkShare',
                   'akshare_version':response['akshare_version'],'fetched_at':datetime.now(TZ).isoformat(),
                   'source_date_min':str(pd.to_datetime(dates).min()) if dates is not None else None,
                   'source_date':str(pd.to_datetime(dates).max()) if dates is not None else None,
