@@ -148,7 +148,7 @@ class DashboardTests(unittest.TestCase):
                 self.assertEqual(app.multiselect[1].value, panels)
             app.selectbox[0].set_value('股票（A股）').run()
             app.text_input[0].set_value('600519')
-            app.button[0].click().run()
+            next(button for button in app.button if button.label == '查询行情').click().run()
             self.assertFalse(app.exception)
             self.assertEqual(app.session_state['request'][0], '600519')
 

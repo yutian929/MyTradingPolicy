@@ -7,6 +7,7 @@ from trading_analysis.cli import TYPE_LABELS
 from trading_analysis.dashboard.charts import available_panels, build_chart
 from trading_analysis.dashboard.data import KINDS, PERIODS, load_history, select_range
 from trading_analysis.dashboard.valuation import valuation_options
+from trading_analysis.dashboard.similarity_view import render_similarity
 from trading_analysis.dashboard.valuation_view import (
     fetch_valuation_source, load_selected_valuations, render_valuation_details,
 )
@@ -29,7 +30,6 @@ def fetch(symbol, kind, adjust):
 
 
 st.title("行情看板")
-st.caption("DAILY MARKET · 日 K 与均线 · 中国市场")
 with st.sidebar:
     st.header("选择标的")
     kind = st.selectbox("标的类型", list(KINDS), index=list(KINDS).index(initial_kind))
@@ -40,8 +40,6 @@ with st.sidebar:
         submitted = st.form_submit_button("查询行情", width="stretch", type="primary")
     st.caption("示例：股票 600519 · 指数 000300 · ETF 510300 · LOF 161725 · 场外基金 050025。代码可能重名，请选择对应类型。")
     refresh = st.button("刷新当前行情", width="stretch")
-    st.divider()
-    st.caption("数据来自东方财富 / AkShare；缓存 1 小时。全部历史指数据源可提供的全部记录，不保证覆盖上市首日。")
 
 if submitted:
     st.session_state["request"] = (symbol.strip(), kind, {"不复权": "", "前复权": "qfq", "后复权": "hfq"}[adjustment])
@@ -76,12 +74,6 @@ selected_panels = st.multiselect("副图指标", panel_options + valuation_choic
                                 help="统一选择成交量、MACD、RSI（14）和当前标的适用的估值指标，也可全部清空。估值数据按需加载。")
 panels = [name for name in selected_panels if name in panel_options]
 valuation_metrics = [name for name in selected_panels if name in valuation_choices]
-if request[1] in ("基金（ETF）", "基金（LOF）"):
-    st.caption("场内基金（含黄金 ETF）提供日终折溢价；股票 ETF 的 PE/PB 请查询其跟踪指数，黄金不套用企业 PE/PB。")
-elif not valuation_choices:
-    st.caption("场外基金不提供场内折溢价；持仓估值需对应持仓或跟踪指数数据，当前不直接套用个股 PE/PB。")
-elif request[1] == "指数":
-    st.caption("估值接口覆盖因指数而异，部分指数没有 PB 或长期历史；不可用时会单独提示。")
 years = {"全部": None, "10年": 10, "5年": 5, "1年": 1}[range_label]
 visible = select_range(full, years)
 st.caption(f"{visible.date.min():%Y-%m-%d} — {visible.date.max():%Y-%m-%d} · {len(visible):,} 条日线 · "
@@ -94,22 +86,17 @@ valuations = load_selected_valuations(request[0], request[1], valuation_metrics)
 for item in valuations:
     if not item.frame.loc[item.frame.date.between(visible.date.min(), visible.date.max()), "value"].notna().any():
         st.info(f"{item.metric}：所选行情时间范围内没有有效数据。")
-st.plotly_chart(build_chart(visible, selected, nav=nav, panels=panels, valuations=valuations), width="stretch", theme=None,
+chart_area = st.container()
+similarity_options = render_similarity(visible, (request, range_label))
+chart_area.plotly_chart(build_chart(visible, selected, nav=nav, panels=panels, valuations=valuations,
+                           **similarity_options), width="stretch", theme=None,
                 config={"scrollZoom": True, "displaylogo": False})
-st.caption("均线按全部历史的最近 N 条日线收盘价计算，记录不足 N 条时留空。时间范围以最新数据日为终点；可拖动、滚轮缩放或双击复位。红涨绿跌；均线以不同颜色区分。")
-if "MACD" in panels:
-    st.caption("MACD(12,26,9)：DIF = EMA12 − EMA26，DEA = DIF 的 EMA9，柱 = 2 × (DIF − DEA)。"
-               "按完整历史计算后截取显示范围，EMA 以首个收盘价（基金为单位净值）初始化；前 33 条记录留空。正柱红色，负柱绿色。")
-    if full.macd_dif.notna().sum() == 0:
-        st.info("可用历史不足 34 条，MACD 暂无有效值。")
-if "RSI" in panels:
-    st.caption("RSI(14) 使用 Wilder 平滑，先按完整历史收盘价（基金为单位净值）计算后截取区间；"
-               "前 14 条记录留空。纵轴 0–100，虚线为 30 / 70 参考线。")
-    if full.rsi14.notna().sum() == 0:
-        st.info("RSI 暂无有效值：需至少 15 条价格记录，且历史中存在涨跌。")
+if "MACD" in panels and full.macd_dif.notna().sum() == 0:
+    st.info("可用历史不足 34 条，MACD 暂无有效值。")
+if "RSI" in panels and full.rsi14.notna().sum() == 0:
+    st.info("RSI 暂无有效值：需至少 15 条价格记录，且历史中存在涨跌。")
 with st.expander("查看日线数据 / 下载"):
     st.dataframe(visible, width="stretch", hide_index=True)
     st.download_button("下载当前范围 CSV", visible.to_csv(index=False).encode("utf-8-sig"),
                        file_name=f"{request[0]}_{range_label}.csv", mime="text/csv")
-st.caption(f"获取时间：{bundle.metadata.get('fetched_at', '未知')} · 来源接口：{bundle.metadata['api']}")
 render_valuation_details(request[0], request[1], valuations, visible.date.min(), visible.date.max())

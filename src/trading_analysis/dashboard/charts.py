@@ -1,9 +1,11 @@
 """Plotly daily candles and independently selectable moving averages."""
 import plotly.graph_objects as go
+import pandas as pd
 from plotly.subplots import make_subplots
 
 from trading_analysis.dashboard.data import PERIODS
 from trading_analysis.dashboard.valuation import PREMIUM
+from trading_analysis.dashboard.similarity import period_label
 
 # Ascending periods use distinct hues with decreasing lightness; avoid candle reds/greens.
 COLORS = ("#c9b45a", "#63a9ce", "#a684c5", "#4b6c9e", "#684074", "#30343b")
@@ -14,7 +16,8 @@ def available_panels(frame, *, nav=False):
     return [name for name in PANELS if name != "成交量" or (not nav and "volume" in frame)]
 
 
-def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",), valuations=()):
+def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",), valuations=(),
+                similarities=(), sample_range=None, focus_rank=None, view_revision=None):
     panels = [name for name in available_panels(frame, nav=nav) if name in panels]
     panel_count = len(panels) + len(valuations)
     fig = make_subplots(rows=1 + panel_count, cols=1, shared_xaxes=True,
@@ -96,4 +99,49 @@ def build_chart(frame, selected=PERIODS, *, nav=False, panels=("成交量",), va
                                  showticklabels=True, showspikes=True, spikemode="across",
                                  spikesnap="data", spikecolor="#737373", spikethickness=1,
                                  spikedash="dash", hoverformat="%Y-%m-%d"))
+    for rank, item in enumerate(similarities, 1):
+        label = period_label(rank)
+        description = (f"{label} · 相似度 {item.score:.1%}（Pearson r={item.score:.4f}）"
+                       f"<br>{item.start:%Y-%m-%d} ～ {item.end:%Y-%m-%d}")
+        _highlight(fig, frame, item.start, item.end, label, description,
+                   "rgba(250,204,21,0.40)" if rank == focus_rank else "rgba(250,204,21,0.20)")
+    if sample_range is not None:
+        _highlight(fig, frame, *sample_range, "当前样本", "当前样本", "rgba(56,189,248,0.15)")
+    price_frame = frame
+    if focus_rank is not None and 1 <= focus_rank <= len(similarities):
+        item = similarities[focus_rank - 1]
+        positions = frame.date.reset_index(drop=True)
+        start = int(positions.searchsorted(item.start))
+        end = int(positions.searchsorted(item.end))
+        padding = max(3, (end - start + 1) // 4)
+        fig.update_layout(xaxis_range=[positions.iloc[max(0, start - padding)],
+                                      positions.iloc[min(len(frame) - 1, end + padding)]])
+        price_frame = frame.iloc[max(0, start - padding):min(len(frame), end + padding + 1)]
+    # Keep overlay geometry out of price-axis scaling, including after a search
+    # replaces a chart that the user previously zoomed or panned.
+    columns = ["close"] if nav else ["low", "high"]
+    columns += [f"MA{period}" for period in selected]
+    prices = price_frame[columns].replace([float("inf"), -float("inf")], float("nan"))
+    low, high = prices.min().min(), prices.max().max()
+    if pd.notna(low) and pd.notna(high):
+        padding = max((high - low) * 0.06, abs(high) * 0.005, 1e-6)
+        fig.update_layout(yaxis_range=[low - padding, high + padding], yaxis_autorange=False)
+    fig.update_layout(uirevision=view_revision)
     return fig
+
+
+def _highlight(fig, frame, start, end, label, description, color):
+    # Paper coordinates keep decorations independent of all data-axis autoranging.
+    bottom, top = fig.layout.yaxis.domain
+    fig.add_shape(type="rect", x0=start - pd.Timedelta(hours=12),
+                  x1=end + pd.Timedelta(hours=12), y0=bottom, y1=top,
+                  xref="x", yref="paper", fillcolor=color, line_width=0, layer="below")
+    fig.add_annotation(x=start + (end - start) / 2, y=top, xref="x", yref="paper",
+                       text=label, showarrow=False, yanchor="top", bgcolor=color,
+                       hovertext=description, font=dict(color="#713f12", size=13))
+    window = frame.loc[frame.date.between(start, end)]
+    # Invisible points provide the interval's details in the existing unified hover.
+    fig.add_trace(go.Scatter(x=window.date, y=window.close, mode="markers",
+                            marker=dict(size=8, color="rgba(0,0,0,0)"),
+                            name=label, showlegend=False, xaxis="x", yaxis="y",
+                            hovertemplate=description + "<extra></extra>"))
